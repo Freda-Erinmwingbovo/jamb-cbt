@@ -1,0 +1,646 @@
+// ============================================================
+//  JAMB CBT 2026  SET 2
+//  Use of English : 60 questions (section objects)
+//  Biology        : 40 questions (flat array)
+//  Chemistry      : 40 questions (flat array)
+//  Physics        : 40 questions (flat array)
+//
+//  Question format:
+//    id           unique string
+//    question     question text
+//    options      { A:"...", B:"...", C:"...", D:"..." }
+//    answer       "A" | "B" | "C" | "D"
+//    explanation  explanation string
+// ============================================================
+
+
+// ── USE OF ENGLISH ───────────────────────────────────────────
+DB["Use of English"][2] = [
+
+  // SECTION 1 – Comprehension Passage 1
+  {
+    section: "Comprehension",
+    passage: `Nigeria's healthcare system faces some of the most severe structural challenges on the African continent. Despite being the most populous country in Africa and one of its largest economies, Nigeria consistently ranks among the lowest in global healthcare indices. Public hospitals, which serve the majority of citizens, are chronically underfunded and understaffed, with many lacking basic equipment such as functional diagnostic machines, reliable electricity, and essential medicines.\n\nThe consequences of this neglect are visible in the nation's health statistics. Nigeria accounts for a disproportionately high share of global maternal and child mortality figures. Many women in rural communities still give birth without access to skilled birth attendants, and preventable diseases such as malaria and typhoid continue to claim thousands of lives annually. The brain drain phenomenon has worsened the crisis further; thousands of trained Nigerian doctors and nurses emigrate each year to the United Kingdom, the United States, and Canada in search of better pay and working conditions.\n\nSuccessive governments have acknowledged the problem and made pledges to increase health sector funding. However, the percentage of the national budget allocated to health has consistently fallen short of the 15 percent recommended by the Abuja Declaration of 2001. Until Nigeria commits to genuine investment in healthcare infrastructure, workforce retention, and community health education, its citizens will continue to bear the heavy burden of a system that has long failed them.`,
+    questions: [
+      {
+        id: "en2_1",
+        question: "According to the passage, what makes Nigeria's healthcare situation particularly striking?",
+        options: { A: "It has no public hospitals at all", B: "It is the smallest economy in Africa", C: "Despite being populous and economically significant, it consistently ranks low in healthcare indices", D: "It has too many doctors and nurses" },
+        answer: "C",
+        explanation: "The passage highlights the contradiction, Nigeria is the most populous African country with one of the largest economies, yet ranks among the lowest in global healthcare indices."
+      },
+      {
+        id: "en2_2",
+        question: "The word 'chronically' as used in the passage most nearly means",
+        options: { A: "Occasionally and unpredictably", B: "Persistently and over a long period of time", C: "Severely but temporarily", D: "Recently and unexpectedly" },
+        answer: "B",
+        explanation: "Chronically means in a way that is long-lasting and persistent. 'Chronically underfunded' means the underfunding has continued over a long period, it is not temporary or occasional."
+      },
+      {
+        id: "en2_3",
+        question: "Which of the following is NOT mentioned as a problem in Nigerian public hospitals?",
+        options: { A: "Lack of reliable electricity", B: "Absence of essential medicines", C: "Overcrowding due to too many patients", D: "Shortage of functional diagnostic machines" },
+        answer: "C",
+        explanation: "The passage mentions underfunding, understaffing, lack of diagnostic equipment, unreliable electricity, and absence of medicines. Overcrowding is never stated as a problem."
+      },
+      {
+        id: "en2_4",
+        question: "According to the passage, the 'brain drain' phenomenon refers to",
+        options: { A: "Mental illness among healthcare workers", B: "The emigration of trained Nigerian doctors and nurses abroad", C: "The failure of medical schools to train enough doctors", D: "The preference for private hospitals over public ones" },
+        answer: "B",
+        explanation: "The passage defines brain drain in context, trained Nigerian doctors and nurses emigrating to the UK, US, and Canada for better pay and working conditions, worsening the staffing crisis."
+      },
+      {
+        id: "en2_5",
+        question: "What is the Abuja Declaration of 2001 referenced for in the passage?",
+        options: { A: "It called for the construction of 100 new hospitals", B: "It recommended that African governments allocate at least 15 percent of their national budget to health", C: "It banned the emigration of healthcare workers from Africa", D: "It established Nigeria's first national health insurance scheme" },
+        answer: "B",
+        explanation: "The passage states the Abuja Declaration recommended 15 percent of the national budget for health, a target Nigeria has consistently failed to meet."
+      }
+    ]
+  },
+
+  // SECTION 2 – Comprehension Passage 2
+  {
+    section: "Comprehension",
+    passage: `Agriculture has historically been the backbone of Nigeria's economy, employing the majority of the rural population and contributing significantly to the nation's gross domestic product before the discovery of oil in the late 1950s. The sector encompasses crop farming, livestock rearing, fishing, and forestry, activities that together sustain millions of families across the country. Yet despite this rich agricultural heritage, Nigeria paradoxically imports large quantities of food it is capable of producing domestically, including rice, wheat, and tomato paste.\n\nThe causes of this contradiction are numerous. Smallholder farmers, who constitute the bulk of Nigeria's agricultural workforce, often lack access to improved seedlings, modern equipment, credit facilities, and reliable irrigation systems. Most farming in Nigeria is still carried out using rudimentary tools and is heavily dependent on rainfall, making it particularly vulnerable to the increasingly erratic weather patterns associated with climate change. Post-harvest losses are also staggering, with estimates indicating that between twenty and forty percent of produce is lost before it reaches the consumer, due to inadequate storage and poor road infrastructure.\n\nGovernment intervention has not been absent. Various administrations have launched agricultural programmes, from the Green Revolution of the 1970s to the Anchor Borrowers Programme of recent years, with varying degrees of success. Analysts argue, however, that sustainable food security will only be achieved through consistent long-term investment, improved rural infrastructure, and policies that make farming genuinely attractive to Nigerian youth.`,
+    questions: [
+      {
+        id: "en2_6",
+        question: "Which of the following does Nigeria import despite being capable of producing it?",
+        options: { A: "Crude oil and natural gas", B: "Rice, wheat, and tomato paste", C: "Cocoa and groundnuts", D: "Fish and timber" },
+        answer: "B",
+        explanation: "The passage explicitly states Nigeria imports rice, wheat, and tomato paste, foods it is capable of producing domestically. This is described as a paradox."
+      },
+      {
+        id: "en2_7",
+        question: "The word 'rudimentary' as used in the passage most nearly means",
+        options: { A: "Advanced and efficient", B: "Modern and mechanised", C: "Basic and undeveloped", D: "Expensive and imported" },
+        answer: "C",
+        explanation: "Rudimentary means basic, undeveloped, or at an early stage. It describes the simple tools Nigerian farmers still rely on, contrasting with modern agricultural technology."
+      },
+      {
+        id: "en2_8",
+        question: "Which of the following is NOT stated as a cause of Nigeria's agricultural underperformance?",
+        options: { A: "Lack of access to improved seedlings", B: "Dependence on rainfall", C: "Unwillingness of farmers to work hard", D: "Poor road infrastructure" },
+        answer: "C",
+        explanation: "The passage lists structural causes, lack of seedlings, rain dependence, poor storage, poor roads. It never suggests farmers are unwilling. The problems are structural, not attitudinal."
+      },
+      {
+        id: "en2_9",
+        question: "According to the passage, what percentage of produce is lost before reaching the consumer?",
+        options: { A: "Between five and ten percent", B: "Between ten and twenty percent", C: "Between twenty and forty percent", D: "More than fifty percent" },
+        answer: "C",
+        explanation: "The passage states 'between twenty and forty percent of produce is lost before it reaches the consumer, due to inadequate storage and poor road infrastructure.'"
+      },
+      {
+        id: "en2_10",
+        question: "What is the main argument made by analysts in the final paragraph?",
+        options: { A: "The government should ban food imports immediately", B: "Nigerian youth should be forced to take up farming", C: "Sustainable food security requires consistent long-term investment and policies that attract youth to farming", D: "The Anchor Borrowers Programme has been a complete failure" },
+        answer: "C",
+        explanation: "Analysts argue food security requires 'consistent long-term investment, improved rural infrastructure, and policies that make farming genuinely attractive to Nigerian youth.' Option D distorts the passage, it says 'varying degrees of success,' not failure."
+      }
+    ]
+  },
+
+  // SECTION 3 – Cloze Test
+  {
+    section: "Cloze Test",
+    passage: `Youth unemployment remains one of the most (11)___ challenges confronting Nigeria today. With over sixty percent of the population below the age of thirty, the country has a vast (12)___ of young people who are eager to work but unable to find suitable employment. Many graduates leave university only to discover that the skills they (13)___ do not match the demands of the labour market. Employers frequently complain that applicants lack practical experience and the (14)___ to function effectively in a professional environment.\n\nThe situation is further (15)___ by the slow pace of industrialisation and the dominance of the informal sector, which offers little job (16)___ or social protection. Some young Nigerians have responded by turning to entrepreneurship, using digital platforms to create their own (17)___ of income. However, this path is not without obstacles, access to startup capital, unstable electricity, and poor internet (18)___ remain significant barriers.\n\nThe government has introduced various schemes to address the crisis, but these have often been (19)___ in scope and short-lived in duration. What Nigeria truly needs, analysts insist, is a deliberate, (20)___ approach that links education, industry, and youth empowerment in a coherent national strategy.`,
+    questions: [
+      { id:"en2_11", question:"Youth unemployment remains one of the most ___ challenges confronting Nigeria today", options:{A:"Trivial",B:"Pressing",C:"Ancient",D:"Amusing"}, answer:"B", explanation:"Pressing means urgent and demanding immediate attention, the most natural collocate for challenges in this context. Trivial, ancient, and amusing all contradict the serious tone." },
+      { id:"en2_12", question:"the country has a vast ___ of young people who are eager to work", options:{A:"Shortage",B:"Minority",C:"Reserve",D:"Reservoir"}, answer:"D", explanation:"Reservoir means a large store or supply, a natural metaphor for an untapped human resource. Shortage and minority directly contradict 'vast.'" },
+      { id:"en2_13", question:"the skills they ___ do not match the demands of the labour market", options:{A:"Acquired",B:"Abandoned",C:"Rejected",D:"Invented"}, answer:"A", explanation:"Acquired means gained or obtained, the natural word for skills learned through university study. The other options change the meaning entirely." },
+      { id:"en2_14", question:"applicants lack practical experience and the ___ to function effectively in a professional environment", options:{A:"Reluctance",B:"Inability",C:"Capacity",D:"Refusal"}, answer:"C", explanation:"The capacity to function effectively is the correct collocate, meaning the ability or power to perform. Reluctance and refusal imply unwillingness. Inability is the opposite of what employers want." },
+      { id:"en2_15", question:"The situation is further ___ by the slow pace of industrialisation", options:{A:"Improved",B:"Resolved",C:"Celebrated",D:"Aggravated"}, answer:"D", explanation:"Aggravated means made worse, fitting the worsening conditions described. Improved and resolved are opposites. Celebrated is absurd in context." },
+      { id:"en2_16", question:"the informal sector, which offers little job ___ or social protection", options:{A:"Security",B:"Application",C:"Hunting",D:"Description"}, answer:"A", explanation:"Job security is the fixed collocate, meaning stable, guaranteed employment. The informal sector is known for offering little of it." },
+      { id:"en2_17", question:"using digital platforms to create their own ___ of income", options:{A:"Loss",B:"Sources",C:"Expenses",D:"Debts"}, answer:"B", explanation:"Sources of income is the correct fixed expression. Loss, expenses, and debts all carry negative financial meanings that contradict the entrepreneurship context." },
+      { id:"en2_18", question:"unstable electricity, and poor internet ___ remain significant barriers", options:{A:"Browsing",B:"Addiction",C:"Connectivity",D:"Censorship"}, answer:"C", explanation:"Internet connectivity is the precise formal term for availability and quality of internet access. Browsing is too informal; addiction and censorship change the meaning entirely." },
+      { id:"en2_19", question:"these have often been ___ in scope and short-lived in duration", options:{A:"Broad",B:"Ambitious",C:"Limited",D:"Successful"}, answer:"C", explanation:"Limited in scope means narrow or insufficient, fitting the critique that government schemes have not been wide-reaching. Broad, ambitious, and successful all contradict the critical tone." },
+      { id:"en2_20", question:"a deliberate, ___ approach that links education, industry, and youth empowerment", options:{A:"Careless",B:"Temporary",C:"Comprehensive",D:"Experimental"}, answer:"C", explanation:"Comprehensive means covering all aspects thoroughly, precisely what analysts call for. Careless and temporary are opposites. Experimental implies uncertainty, contradicting the call for a definitive strategy." }
+    ]
+  },
+
+  // SECTION 4 – Lexis & Structure
+  {
+    section: "Lexis & Structure",
+    questions: [
+      { id:"en2_21", question:"Choose the word NEAREST in meaning to TENACIOUS", options:{A:"Weak",B:"Persistent",C:"Aggressive",D:"Careless"}, answer:"B", explanation:"Tenacious means holding firmly to something, persistent and determined, not giving up easily. Weak and careless are opposites. Aggressive suggests force, not persistence." },
+      { id:"en2_22", question:"Choose the word OPPOSITE in meaning to FRUGAL", options:{A:"Thrifty",B:"Economical",C:"Wasteful",D:"Cautious"}, answer:"C", explanation:"Frugal means careful with money and resources. Its antonym is wasteful. Thrifty and economical are synonyms of frugal." },
+      { id:"en2_23", question:"Choose the word NEAREST in meaning to AMBIGUOUS", options:{A:"Clear",B:"Precise",C:"Vague",D:"Definite"}, answer:"C", explanation:"Ambiguous means open to more than one interpretation, unclear or vague. Clear, precise, and definite are all antonyms." },
+      { id:"en2_24", question:"Choose the word OPPOSITE in meaning to SERENE", options:{A:"Calm",B:"Peaceful",C:"Turbulent",D:"Quiet"}, answer:"C", explanation:"Serene means calm and untroubled. Its antonym is turbulent, full of commotion and disorder. Calm, peaceful, and quiet are synonyms of serene." },
+      { id:"en2_25", question:"Choose the correct option: \"The committee ___ divided on the issue.\"", options:{A:"Were",B:"Is",C:"Are",D:"Have been"}, answer:"B", explanation:"Collective nouns (committee, jury, government, team) take singular verbs in formal British English when acting as a unit. JAMB follows formal British usage, 'the committee is' is correct." },
+      { id:"en2_26", question:"Identify the figure of speech: \"The warrior fought like a wounded lion.\"", options:{A:"Personification",B:"Metaphor",C:"Simile",D:"Hyperbole"}, answer:"C", explanation:"A simile makes a comparison using like or as. 'Fought like a wounded lion' uses 'like'. A metaphor would say 'He was a wounded lion', without like or as." },
+      { id:"en2_27", question:"\"Chidi was burning the midnight oil before his JAMB examination.\" This means he was", options:{A:"Starting a fire at night",B:"Working or studying late into the night",C:"Wasting his time doing nothing",D:"Cooking a meal very late"}, answer:"B", explanation:"Burn the midnight oil means to work or study very late into the night, from burning oil lamps for light. It has nothing to do with actual fire or cooking." },
+      { id:"en2_28", question:"Choose the word NEAREST in meaning to CANDID", options:{A:"Deceptive",B:"Honest",C:"Silent",D:"Rude"}, answer:"B", explanation:"Candid means truthful and straightforward, honest and frank in expression. Deceptive is its antonym. Silent and rude are unrelated." },
+      { id:"en2_29", question:"The passive form of 'The principal announced the results' is", options:{A:"The results were announced by the principal.",B:"The results are announced by the principal.",C:"The principal was announced by the results.",D:"The results have been announced the principal."}, answer:"A", explanation:"Passive voice: object → subject + to be (correct tense) + past participle + by + original subject. Announced (simple past) → were announced. Only A applies this correctly." },
+      { id:"en2_30", question:"Choose the word OPPOSITE in meaning to COVERT", options:{A:"Hidden",B:"Secret",C:"Overt",D:"Classified"}, answer:"C", explanation:"Covert means secret or hidden. Its antonym is overt, done openly and not secretly. Hidden, secret, and classified are all synonyms of covert." },
+      { id:"en2_31", question:"Identify the figure of speech: \"Life is a journey with no map.\"", options:{A:"Simile",B:"Oxymoron",C:"Alliteration",D:"Metaphor"}, answer:"D", explanation:"A metaphor states one thing IS another, without like or as. 'Life is a journey' directly equates life to a journey. A simile would say 'Life is like a journey.'" },
+      { id:"en2_32", question:"\"The ball is in your court.\" This expression means", options:{A:"A sports announcement",B:"The responsibility for the next action now belongs to you",C:"You have lost your chance entirely",D:"The game is about to begin"}, answer:"B", explanation:"The ball is in your court is an idiom from tennis, meaning the next decision or move is someone else's responsibility. It has nothing to do with an actual game." },
+      { id:"en2_33", question:"\"She hasn't called yet, ___?\"", options:{A:"Has she",B:"Hasn't she",C:"Did she",D:"Does she"}, answer:"A", explanation:"Question tags reverse the polarity of the main clause. The main clause is negative (hasn't) so the tag must be positive: has she? Using 'hasn't she' would repeat the negative, which is incorrect." },
+      { id:"en2_34", question:"Choose the word NEAREST in meaning to OSTENTATIOUS", options:{A:"Modest",B:"Showy",C:"Simple",D:"Quiet"}, answer:"B", explanation:"Ostentatious means designed to impress or attract attention, showy, flashy, or pretentious. Modest, simple, and quiet are all antonyms." },
+      { id:"en2_35", question:"Identify the figure of speech: \"Peter Piper picked a peck of pickled peppers.\"", options:{A:"Onomatopoeia",B:"Assonance",C:"Alliteration",D:"Personification"}, answer:"C", explanation:"Alliteration is the repetition of the same consonant sound at the beginning of closely connected words. The repeated /p/ sound is a classic example." },
+      { id:"en2_36", question:"\"She has been waiting ___ two hours.\"", options:{A:"Since",B:"From",C:"For",D:"During"}, answer:"C", explanation:"For is used with a duration, a period of time. 'For two hours' = a length of time. Since is used with a specific point in time (e.g. since 3 o'clock). From and during do not fit." },
+      { id:"en2_37", question:"Choose the word OPPOSITE in meaning to ADAMANT", options:{A:"Firm",B:"Stubborn",C:"Flexible",D:"Determined"}, answer:"C", explanation:"Adamant means absolutely refusing to change one's mind. Its antonym is flexible, willing to change or compromise. Firm, stubborn, and determined are all synonyms of adamant." },
+      { id:"en2_38", question:"\"He let the cat out of the bag during the meeting.\" This means he", options:{A:"Brought his pet to the meeting",B:"Accidentally revealed a secret",C:"Caused a disturbance in the meeting",D:"Made an embarrassing mistake"}, answer:"B", explanation:"Let the cat out of the bag means to accidentally reveal a secret that was supposed to be hidden. It has nothing to do with an actual cat." },
+      { id:"en2_39", question:"\"If I ___ a doctor, I would treat patients for free.\"", options:{A:"Am",B:"Was",C:"Were",D:"Had been"}, answer:"C", explanation:"This is a Type 2 (unreal/hypothetical present) conditional. The correct form is 'If I were...', the subjunctive mood. 'Were' is the correct formal form that JAMB expects." },
+      { id:"en2_40", question:"Choose the word NEAREST in meaning to RETICENT", options:{A:"Talkative",B:"Outspoken",C:"Reserved",D:"Confident"}, answer:"C", explanation:"Reticent means not readily revealing thoughts or feelings, reserved and reluctant to speak. Talkative and outspoken are antonyms. Confident is unrelated." }
+    ]
+  },
+
+  // SECTION 5 – Oral English
+  {
+    section: "Oral English",
+    questions: [
+      { id:"en2_41", question:"Which of the following words has a DIFFERENT vowel sound from the others?", options:{A:"Boat",B:"Coat",C:"Bought",D:"Goat"}, answer:"C", explanation:"Boat, coat, and goat all contain the diphthong /əʊ/. Bought contains /ɔː/ as in law, caught, taught. Despite the spelling similarity, bought is the phonetic odd one out." },
+      { id:"en2_42", question:"Which of the following words contains a SILENT letter?", options:{A:"Wrap",B:"Map",C:"Snap",D:"Trap"}, answer:"A", explanation:"In wrap, the w is silent, pronounced /ræp/. Silent w appears before r at the start of words: wrap, write, wrist, wrong, wrestle. All letters in map, snap, and trap are fully pronounced." },
+      { id:"en2_43", question:"The word PROTEST when used as a NOUN is stressed on", options:{A:"The second syllable (pro-TEST)",B:"Both syllables equally",C:"Neither syllable",D:"The first syllable (PRO-test)"}, answer:"D", explanation:"As a NOUN: PRO-test. As a VERB: pro-TEST. This follows the standard two-syllable noun/verb stress shift, same as RE-cord/re-CORD and PER-mit/per-MIT." },
+      { id:"en2_44", question:"Which of the following is a MINIMAL PAIR?", options:{A:"Bat / bad",B:"Bit / beat",C:"Cat / cut",D:"Map / mop"}, answer:"A", explanation:"Bat /bæt/ and bad /bæd/ differ only in the final consonant /t/ versus /d/. Both are alveolar stops, differing only in voicing. This is a clean consonant minimal pair." },
+      { id:"en2_45", question:"Which of the following words contains the vowel sound /iː/ as in 'see'?", options:{A:"Friend",B:"Field",C:"Bread",D:"Head"}, answer:"B", explanation:"Field is pronounced /fiːld/, containing the long vowel /iː/ despite the 'ie' spelling. Friend, bread, and head all contain /ɛ/ a classic JAMB spelling trap." },
+      { id:"en2_46", question:"Which correctly describes the sound at the beginning of CHURCH?", options:{A:"Voiceless alveolar fricative",B:"Voiced palatal approximant",C:"Voiceless palato-alveolar affricate",D:"Voiced bilabial plosive"}, answer:"C", explanation:"Ch in church = /tʃ/ airflow briefly stopped then released with friction at the palato-alveolar region. Voiceless (no vibration) + palato-alveolar + affricate." },
+      { id:"en2_47", question:"Which sentence would most likely be said with FALLING intonation?", options:{A:"Are you coming tomorrow?",B:"Would you like tea or coffee?",C:"Have you seen my book?",D:"She finally passed her exams."}, answer:"D", explanation:"Falling intonation is used in statements. 'She finally passed her exams' is declarative, it falls. A and C are Yes/No questions (rising). B is an alternative question." },
+      { id:"en2_48", question:"Which of the following words rhymes with THOUGH?", options:{A:"Through",B:"Tough",C:"Cough",D:"Dough"}, answer:"D", explanation:"Though = /ðəʊ/. Dough = /dəʊ/ they share the /əʊ/ sound and rhyme perfectly. Through = /θruː/; tough = /tʌf/; cough = /kɒf/ all classic spelling traps." },
+      { id:"en2_49", question:"The word OBJECT when used as a VERB carries stress on", options:{A:"Neither syllable",B:"Both syllables equally",C:"The first syllable (OB-ject)",D:"The second syllable (ob-JECT)"}, answer:"D", explanation:"As a VERB: ob-JECT 'I ob-JECT to this proposal.' As a NOUN: OB-ject 'The OB-ject on the table.' Same noun/verb stress shift as record, permit, and protest." },
+      { id:"en2_50", question:"Which set of words all contain the vowel sound /æ/ as in 'cat'?", options:{A:"Dark, bark, park",B:"Hand, band, sand",C:"Ball, tall, hall",D:"Bird, word, heard"}, answer:"B", explanation:"Hand /hænd/, band /bænd/, and sand /sænd/ all share the short vowel /æ/. Option A contains /ɑː/; Option C contains /ɔː/; Option D contains /ɜː/." }
+    ]
+  },
+
+  // SECTION 6 – Novel: The Lekki Headmaster
+  {
+    section: "Novel – The Lekki Headmaster",
+    questions: [
+      { id:"en2_51", question:"Bepo's two daughters who live in the UK with their mother are named", options:{A:"Seri and Beke",B:"Nike and Kike",C:"Grace and Titi",D:"Anabel and Nike"}, answer:"B", explanation:"Bepo's daughters are Nike and Kike, both in the UK with their mother Seri. Beke Egbin is the school's guidance counsellor. Grace Apeh is the Vice Principal. A classic character-name trap." },
+      { id:"en2_52", question:"Beke Egbin's role at Stardom Schools is that of", options:{A:"Vice Principal",B:"Class teacher",C:"Guidance counsellor",D:"School proprietor"}, answer:"C", explanation:"Beke Egbin is the guidance counsellor, responsible for student welfare and counselling. She plays a significant supporting role as Bepo navigates his crisis. Mrs. Grace Apeh is the Vice Principal." },
+      { id:"en2_53", question:"The setting of The Lekki Headmaster is significant primarily because Lekki represents", options:{A:"A rural, underdeveloped community in Lagos",B:"An elite, aspirational suburb of Lagos associated with Nigeria's upwardly mobile class",C:"The capital city of Nigeria",D:"A fictional location invented by the author"}, answer:"B", explanation:"Lekki is a high-end Lagos suburb, home to wealthy professionals and elite private schools. The setting underscores themes of success, status, and the agonising choice between comfort and patriotism." },
+      { id:"en2_54", question:"The nickname 'The Lekki Headmaster' was earned by Bepo because of", options:{A:"His physical appearance and height",B:"His long, distinguished service and leadership at Stardom Schools in Lekki",C:"A nickname given to him by the school proprietor",D:"His frequent appearances on Lagos television"}, answer:"B", explanation:"Bepo earned the title through 24 years of dedicated, passionate service as principal, becoming a beloved and deeply respected figure in the Lekki educational community." },
+      { id:"en2_55", question:"Which of the following best describes Bepo's character as portrayed in the novel?", options:{A:"Selfish and career-driven",B:"Passionate, dedicated, and internally conflicted",C:"Cold and emotionally detached from his students",D:"Ambitious and willing to abandon his principles"}, answer:"B", explanation:"Bepo genuinely loves teaching and his students, passionate and dedicated. Yet he is torn between duty to Nigeria and longing for his family. This internal conflict drives the entire novel." },
+      { id:"en2_56", question:"The family separation experienced by Bepo reflects which broader social reality in Nigeria?", options:{A:"The dominance of boarding schools over day schools",B:"The impact of the Japa syndrome on Nigerian family structures",C:"The preference of Nigerian men for urban careers over rural ones",D:"The government's policy on overseas education"}, answer:"B", explanation:"Bepo's wife and daughters are in the UK while he remains in Nigeria, a direct consequence of the Japa syndrome. The novel uses this to explore the human cost of mass professional emigration." },
+      { id:"en2_57", question:"The opening scene, Bepo weeping publicly at assembly, serves primarily as the literary device known as", options:{A:"Flashback",B:"In medias res",C:"Foreshadowing",D:"Soliloquy"}, answer:"B", explanation:"In medias res (Latin: into the middle of things) opens the story at a moment of high tension. Opening with Bepo's breakdown immediately grips the reader, raising the question of what brought him to this point." },
+      { id:"en2_58", question:"One of the secondary themes explored in The Lekki Headmaster is", options:{A:"The dangers of social media addiction among students",B:"The impact of family separation on personal identity and emotional wellbeing",C:"The rivalry between private and public schools in Lagos",D:"The role of religion in Nigerian education"}, answer:"B", explanation:"Beyond the central theme, the novel explores the emotional toll of family separation, Bepo's longing for his wife and daughters and the weight of a transnational marriage." },
+      { id:"en2_59", question:"The character of Beke Egbin in the novel primarily represents", options:{A:"The indifferent bureaucracy of the school system",B:"A voice of reason and emotional support within the school",C:"The corrupt elements within private education",D:"Bepo's romantic interest"}, answer:"B", explanation:"As guidance counsellor, Beke Egbin is a calm, supportive presence, offering emotional grounding during Bepo's crisis. She embodies the need for empathy and wisdom in institutions." },
+      { id:"en2_60", question:"The narrative approach of The Lekki Headmaster is best described as", options:{A:"Third-person omniscient, the narrator knows all characters' thoughts",B:"First-person, Bepo narrates his own story",C:"Second-person, the reader is addressed directly",D:"Third-person limited, focused only on external events"}, answer:"A", explanation:"The novel uses third-person omniscient narration, the narrator has access to multiple characters' inner thoughts. This allows the reader to understand Bepo's anguish and how others perceive events." }
+    ]
+  }
+
+]; // end Use of English
+
+
+// ── BIOLOGY ──────────────────────────────────────────────────
+DB["Biology"][2] = [
+  { id:"bi2_1",  question:"A colour-blind man (X^b Y) marries a woman with normal vision whose father was colour-blind (X^B X^b). What proportion of their daughters will be colour-blind?", options:{A:"None",B:"All daughters",C:"1/2 of daughters",D:"1/4 of daughters"}, answer:"C", explanation:"Mother is a carrier (X^B X^b). Father is colour-blind (X^b Y). Cross: X^B X^b × X^b Y. Daughters: X^B X^b (carrier, normal vision) and X^b X^b (colour-blind), each with probability 1/2. So 50% of daughters are colour-blind. Sons: X^B Y (normal) and X^b Y (colour-blind), 50% of sons are colour-blind." },
+  { id:"bi2_2",  question:"The site of photosynthesis within a plant cell is the", options:{A:"Nucleus",B:"Chloroplast",C:"Ribosome",D:"Vacuole"}, answer:"B", explanation:"Chloroplasts contain chlorophyll which traps light energy. Light-dependent reactions occur in the thylakoid membranes; the Calvin cycle occurs in the stroma." },
+  { id:"bi2_3",  question:"Which organelle is responsible for protein synthesis?", options:{A:"Golgi apparatus",B:"Lysosome",C:"Ribosome",D:"Vacuole"}, answer:"C", explanation:"Ribosomes translate mRNA into amino acid chains (polypeptides). Found free in the cytoplasm or on the rough endoplasmic reticulum. Present in all living cells including prokaryotes." },
+  { id:"bi2_4",  question:"Active transport differs from diffusion in that active transport", options:{A:"Moves substances from high to low concentration",B:"Does not require a membrane",C:"Requires energy (ATP) and moves substances against the concentration gradient",D:"Only occurs in plant cells"}, answer:"C", explanation:"Active transport moves substances from low to high concentration, against the gradient, using ATP and carrier proteins. Diffusion is passive and moves down the gradient." },
+  { id:"bi2_5",  question:"When a plant cell placed in concentrated salt solution loses water and its membrane pulls away from the cell wall, the process is called", options:{A:"Osmosis",B:"Turgidity",C:"Plasmolysis",D:"Diffusion"}, answer:"C", explanation:"Plasmolysis occurs when a plant cell loses water by osmosis to a hypertonic solution. The vacuole shrinks and the membrane pulls away from the cell wall, the cell becomes flaccid." },
+  { id:"bi2_6",  question:"The part of the brain responsible for thinking, memory, and language is the", options:{A:"Cerebellum",B:"Medulla oblongata",C:"Cerebrum",D:"Hypothalamus"}, answer:"C", explanation:"The cerebrum controls all conscious voluntary activities. The cerebellum controls balance. The medulla controls breathing and heartbeat. The hypothalamus regulates temperature and hormones." },
+  { id:"bi2_7",  question:"Which enzyme digests proteins in the stomach?", options:{A:"Salivary amylase",B:"Pepsin",C:"Lipase",D:"Maltase"}, answer:"B", explanation:"Pepsin (activated by HCl in the stomach) breaks proteins into shorter polypeptides. Salivary amylase digests starch. Lipase digests fats. Maltase breaks maltose into glucose." },
+  { id:"bi2_8",  question:"The correct sequence of stages in mitosis is", options:{A:"Prophase → Anaphase → Metaphase → Telophase",B:"Metaphase → Prophase → Anaphase → Telophase",C:"Prophase → Metaphase → Anaphase → Telophase",D:"Anaphase → Prophase → Metaphase → Telophase"}, answer:"C", explanation:"PMAT, Prophase (chromosomes condense) → Metaphase (align at equator) → Anaphase (chromatids pulled to poles) → Telophase (new nuclei form). Cytokinesis follows." },
+  { id:"bi2_9",  question:"During inhalation, the diaphragm", options:{A:"Relaxes and moves upward",B:"Contracts and moves downward",C:"Remains stationary",D:"Moves sideways"}, answer:"B", explanation:"Inhalation: diaphragm contracts and flattens downward; intercostal muscles pull ribcage up and out, increasing thoracic volume, decreasing pressure, drawing air in." },
+  { id:"bi2_10", question:"Which of the following is NOT a function of the liver?", options:{A:"Production of bile",B:"Detoxification of harmful substances",C:"Production of insulin",D:"Regulation of blood glucose levels"}, answer:"C", explanation:"The liver produces bile, detoxifies alcohol and drugs, regulates blood glucose, and produces plasma proteins. Insulin is produced by the pancreas, not the liver." },
+  { id:"bi2_11", question:"The hormone that raises blood glucose when it falls too low is", options:{A:"Insulin",B:"Adrenaline",C:"Glucagon",D:"Thyroxine"}, answer:"C", explanation:"Glucagon (produced by alpha cells of the islets of Langerhans) stimulates the liver to break down glycogen into glucose, raising blood glucose. Insulin lowers it." },
+  { id:"bi2_12", question:"A patient is given an injection of antibodies against tetanus toxin immediately after a deep wound. This is an example of", options:{A:"Active natural immunity",B:"Active artificial immunity",C:"Passive artificial immunity",D:"Passive natural immunity"}, answer:"C", explanation:"Passive immunity = ready-made antibodies are introduced (the patient does NOT produce their own). Artificial = deliberately administered by humans (not naturally acquired). Compare: A vaccine stimulates the person's own immune system to produce antibodies = active artificial immunity. Passive immunity is fast but short-lived; active is slow but long-lasting." },
+  { id:"bi2_13", question:"In snapdragons, red flower (R) is incompletely dominant over white (r). A red-flowered plant is crossed with a white-flowered plant. What are the expected phenotypes and ratio of offspring?", options:{A:"All red flowers",B:"1 red : 2 pink : 1 white",C:"All pink flowers",D:"1 red : 1 white"}, answer:"C", explanation:"Red = RR, White = rr. Cross: RR × rr → all Rr offspring. In incomplete dominance, heterozygotes (Rr) show an intermediate phenotype, pink. This is NOT a 3:1 Mendelian ratio because neither allele is fully dominant. All F₁ offspring are pink." },
+  { id:"bi2_14", question:"Guttation differs from transpiration in that guttation", options:{A:"Occurs through stomata",B:"Involves water vapour loss",C:"Involves the loss of liquid water through special pores called hydathodes",D:"Is driven by sunlight"}, answer:"C", explanation:"Guttation is liquid water loss through hydathodes, occurring at night or in high humidity when root pressure is high. Transpiration is water vapour loss mainly through stomata." },
+  { id:"bi2_15", question:"The main organ of excretion in humans is the", options:{A:"Liver",B:"Lungs",C:"Skin",D:"Kidney"}, answer:"D", explanation:"Kidneys filter blood to remove urea, excess salts, and water, producing urine. Lungs excrete CO₂ and water vapour. Skin excretes salts in sweat. The liver produces urea but kidneys excrete it." },
+  { id:"bi2_16", question:"A leaf is kept in darkness for 48 hours, then placed in bright light. Initially the CO₂ level around the leaf rises, then falls below the starting level. Which statement best explains this?", options:{A:"Photosynthesis always produces more CO₂ than respiration",B:"In darkness only respiration occurs releasing CO₂; in light photosynthesis eventually exceeds respiration, net CO₂ is absorbed",C:"The leaf switches completely from respiration to photosynthesis in light",D:"CO₂ is converted to O₂ directly by the leaf in darkness"}, answer:"B", explanation:"In darkness: only respiration occurs, CO₂ released. In light: both respiration (CO₂ out) and photosynthesis (CO₂ in) occur simultaneously. Initially, photosynthesis rate builds up. When photosynthesis rate exceeds respiration rate, net CO₂ is absorbed, the compensation point is passed. Respiration NEVER stops." },
+  { id:"bi2_17", question:"The blind spot in the human eye is the point where", options:{A:"Light is focused most sharply",B:"The optic nerve leaves the eye and there are no photoreceptors",C:"The lens is attached to the ciliary body",D:"Colour vision is most acute"}, answer:"B", explanation:"The optic disc (blind spot) is where the optic nerve exits the eyeball, no rods or cones are present. The brain fills in the gap using surrounding visual information." },
+  { id:"bi2_18", question:"RNA differs from DNA in that RNA", options:{A:"Contains deoxyribose sugar and is double-stranded",B:"Contains ribose sugar and is usually single-stranded",C:"Contains thymine instead of uracil",D:"Is found only in the nucleus"}, answer:"B", explanation:"RNA contains ribose sugar, is single-stranded, and uses uracil (U) instead of thymine (T). DNA contains deoxyribose, is double-stranded, uses thymine, and is mainly in the nucleus." },
+  { id:"bi2_19", question:"The transport of sucrose from leaves to other plant parts occurs through the", options:{A:"Xylem",B:"Epidermis",C:"Phloem",D:"Cortex"}, answer:"C", explanation:"Phloem transports organic solutes, mainly sucrose, from the leaves (source) to all other plant parts (sinks). This is called translocation. Xylem transports water and minerals upward from roots." },
+  { id:"bi2_20", question:"A patient's urine contains glucose, protein, and red blood cells. The most likely cause is", options:{A:"Normal kidney function after a heavy meal",B:"Damage to the glomerulus, causing it to be excessively permeable",C:"Overproduction of ADH causing water retention",D:"Underproduction of insulin by the pancreas only"}, answer:"B", explanation:"Normally the glomerular filtration membrane prevents large molecules (proteins, blood cells) from entering the filtrate. Glucose in urine suggests blood glucose is so high it exceeds the renal threshold. However, protein AND red blood cells in urine = glomerular damage (glomerulonephritis), the membrane is too permeable. This is NOT just diabetes." },
+  { id:"bi2_21", question:"A voluntary action differs from a reflex action in that a voluntary action", options:{A:"Occurs without the nervous system",B:"Is faster than a reflex action",C:"Involves conscious control by the cerebrum",D:"Does not require sensory input"}, answer:"C", explanation:"Voluntary actions are consciously controlled by the cerebrum, deliberate and stoppable at will. Reflex actions bypass the brain. Reflexes are faster precisely because the brain is not involved." },
+  { id:"bi2_22", question:"The blood component responsible for clotting is the", options:{A:"Red blood cells",B:"Plasma",C:"White blood cells",D:"Platelets"}, answer:"D", explanation:"Platelets (thrombocytes) initiate clotting when vessels are damaged, triggering clotting factors that form a fibrin clot to stop bleeding. Vitamin K is also essential for producing clotting factors." },
+  { id:"bi2_23", question:"Binary fission is the mode of reproduction used by", options:{A:"Yeast",B:"Hydra",C:"Bacteria",D:"Amoeba only"}, answer:"C", explanation:"Binary fission is the primary asexual reproduction method in bacteria, the circular DNA replicates and the cell divides into two identical daughter cells. Yeast and Hydra use budding." },
+  { id:"bi2_24", question:"In commensalism, the relationship is such that", options:{A:"Both organisms benefit",B:"One benefits while the other is harmed",C:"One benefits while the other is neither helped nor harmed",D:"Both are harmed"}, answer:"C", explanation:"Commensalism: the commensal benefits; the host is unaffected. Example: an orchid on a tree for support only. Mutualism = both benefit; Parasitism = one benefits, host is harmed." },
+  { id:"bi2_25", question:"The liquid component of blood in which cells and platelets are suspended is called", options:{A:"Serum",B:"Plasma",C:"Lymph",D:"Haemoglobin"}, answer:"B", explanation:"Plasma is the pale yellow liquid making up ~55% of blood volume, containing water, proteins, glucose, hormones, salts, and waste products. Serum is plasma minus clotting factors." },
+  { id:"bi2_26", question:"A grassland ecosystem has the following biomass data: Grass = 10,000 kg; Grasshoppers = 1,000 kg; Frogs = 100 kg; Snakes = 10 kg. What is the energy transfer efficiency between grasshoppers and frogs?", options:{A:"1%",B:"10%",C:"100%",D:"0.1%"}, answer:"B", explanation:"Efficiency = (biomass at next level / biomass at current level) × 100 = (100/1000) × 100 = 10%. Typically 10% of energy passes from one trophic level to the next (10% rule). The remaining 90% is lost as heat (respiration), waste, and unconsumed material. This is why food chains rarely exceed 4–5 links." },
+  { id:"bi2_27", question:"Deficiency of Vitamin C leads to", options:{A:"Rickets",B:"Scurvy",C:"Night blindness",D:"Anaemia"}, answer:"B", explanation:"Vitamin C deficiency causes scurvy, bleeding gums, slow wound healing, weakness. Rickets = Vitamin D. Night blindness = Vitamin A. Anaemia = iron or Vitamin B12 deficiency." },
+  { id:"bi2_28", question:"A plant wilts on a hot sunny day despite being well-watered. Which is the most accurate explanation?", options:{A:"The roots have stopped absorbing water",B:"The rate of transpiration exceeds the rate of water absorption, causing cells to lose turgidity",C:"Photosynthesis has stopped because of excessive light",D:"Stomata have opened too wide, blocking water uptake"}, answer:"B", explanation:"On hot, dry, windy days, transpiration rate increases dramatically. If the rate of water loss exceeds the rate of absorption by roots, cells lose water and turgor pressure falls, the plant wilts. Stomata then close (guard cells lose turgidity), reducing transpiration. The plant recovers once the water deficit is made up." },
+  { id:"bi2_29", question:"In a test cross, if a tall plant of unknown genotype crossed with a short plant (tt) produces ALL tall offspring, the unknown parent is", options:{A:"Tt",B:"tt",C:"TT",D:"Either Tt or TT"}, answer:"C", explanation:"TT × tt → all Tt (all tall). Tt × tt → 50% Tt (tall) + 50% tt (short). Since ALL offspring are tall, the parent must be TT (homozygous dominant)." },
+  { id:"bi2_30", question:"The function of bile in digestion is to", options:{A:"Break down proteins into amino acids",B:"Emulsify fats into smaller droplets to increase surface area for lipase",C:"Convert starch into maltose",D:"Neutralise alkaline chyme entering the duodenum"}, answer:"B", explanation:"Bile (produced by the liver, stored in the gall bladder) emulsifies fats, breaking large globules into smaller droplets, vastly increasing surface area for lipase. Bile neutralises ACIDIC chyme." },
+  { id:"bi2_31", question:"The skin helps regulate temperature by", options:{A:"Producing melanin to absorb sunlight",B:"Sweating to cool the body and controlling blood flow through vasodilation and vasoconstriction",C:"Producing vitamin D from sunlight",D:"Acting as a barrier against pathogens only"}, answer:"B", explanation:"Temperature regulation via skin: sweating (evaporation cools), vasodilation (vessels widen in heat → more heat lost), vasoconstriction (vessels narrow in cold → less heat lost)." },
+  { id:"bi2_32", question:"Which of the following is a BIOTIC factor in an ecosystem?", options:{A:"Temperature",B:"Rainfall",C:"Soil pH",D:"Predation"}, answer:"D", explanation:"Biotic factors are living components, predation, competition, disease, symbiosis. Abiotic factors are non-living: temperature, rainfall, light intensity, soil pH, wind speed." },
+  { id:"bi2_33", question:"In: Phytoplankton → Zooplankton → Small fish → Large fish → Shark, the tertiary consumer is", options:{A:"Zooplankton",B:"Small fish",C:"Large fish",D:"Shark"}, answer:"C", explanation:"Phytoplankton = producer; Zooplankton = primary consumer; Small fish = secondary consumer; Large fish = tertiary consumer; Shark = quaternary consumer." },
+  { id:"bi2_34", question:"Active transport differs from facilitated diffusion in that active transport", options:{A:"Facilitated diffusion requires ATP; active transport does not",B:"Active transport requires ATP and moves substances against the concentration gradient; facilitated diffusion does not require ATP",C:"Both require ATP but work in opposite directions",D:"Neither requires ATP but both use carrier proteins"}, answer:"B", explanation:"Active transport: ATP + carrier proteins, moves against gradient. Facilitated diffusion: carrier proteins, NO ATP, moves down gradient. Both use membrane proteins but only active transport needs energy." },
+  { id:"bi2_35", question:"The pituitary gland is called the 'master gland' because it", options:{A:"Produces insulin and glucagon",B:"Secretes hormones that regulate other endocrine glands",C:"Is the largest endocrine gland",D:"Controls voluntary muscle movement"}, answer:"B", explanation:"The pituitary secretes TSH (stimulates thyroid), ACTH (stimulates adrenal cortex), FSH and LH (stimulate gonads), controlling many other endocrine glands. Hence 'master gland.'" },
+  { id:"bi2_36", question:"The Culex mosquito is the vector of", options:{A:"Malaria",B:"Yellow fever",C:"Sleeping sickness",D:"Filariasis (elephantiasis)"}, answer:"D", explanation:"Culex transmits filariasis caused by Wuchereria bancrofti. Anopheles → malaria. Aedes → yellow fever and dengue. Tsetse fly → sleeping sickness." },
+  { id:"bi2_37", question:"Root hair cells are adapted for water absorption because they", options:{A:"Contain chlorophyll",B:"Have a large surface area due to their elongated hair-like extensions",C:"Produce mucus to attract water",D:"Are located above the soil surface"}, answer:"B", explanation:"Root hair extensions vastly increase the surface area in contact with soil water, maximising osmotic absorption. They have thin walls and no waxy cuticle." },
+  { id:"bi2_38", question:"Denitrification involves bacteria that", options:{A:"Fix atmospheric nitrogen into ammonia",B:"Convert ammonia into nitrites and nitrates",C:"Convert nitrates back into atmospheric nitrogen gas",D:"Decompose dead organic matter into ammonia"}, answer:"C", explanation:"Denitrifying bacteria (e.g. Pseudomonas denitrificans) convert soil nitrates (NO₃⁻) back into nitrogen gas (N₂). Occurs in waterlogged anaerobic soils and reduces soil fertility." },
+  { id:"bi2_39", question:"In a food chain: Maize → Rat → Snake → Eagle, the maize stores 100,000 kJ of energy. Assuming 10% efficiency at each level, how much energy is available to eagles?", options:{A:"10,000 kJ",B:"1,000 kJ",C:"100 kJ",D:"10 kJ"}, answer:"C", explanation:"Maize → 100,000 kJ. Rat receives 10% = 10,000 kJ. Snake receives 10% of rat = 1,000 kJ. Eagle receives 10% of snake = 100 kJ. Each transfer loses 90% as heat, waste, and movement. This shows why top predators are rare and why vegetarian diets are more energy-efficient." },
+  { id:"bi2_40", question:"Vaccines protect against disease by", options:{A:"Killing pathogens already in the body",B:"Stimulating the immune system to produce antibodies, providing active immunity",C:"Replacing damaged white blood cells",D:"Providing ready-made antibodies from another organism"}, answer:"B", explanation:"Vaccines contain weakened, killed, or antigenic components of pathogens, stimulating the immune system to produce antibodies and memory cells without causing disease. Option D describes passive immunity." }
+]; // end Biology
+
+
+// ── CHEMISTRY ────────────────────────────────────────────────
+DB["Chemistry"][2] = [
+  { id:"ch2_1",  question:"In a titration, 30 cm³ of H₂SO₄ solution is neutralised by 24 cm³ of 0.25 mol/dm³ NaOH. What is the concentration of the H₂SO₄? (H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O)", options:{A:"0.1 mol/dm³",B:"0.2 mol/dm³",C:"0.15 mol/dm³",D:"0.05 mol/dm³"}, answer:"A", explanation:"Moles NaOH = 0.25 × (24/1000) = 0.006 mol. Mole ratio H₂SO₄:NaOH = 1:2. Moles H₂SO₄ = 0.006/2 = 0.003 mol. Concentration H₂SO₄ = 0.003/(30/1000) = 0.003/0.03 = 0.1 mol/dm³. Always account for the mole ratio, H₂SO₄ is diprotic." },
+  { id:"ch2_2",  question:"An element with atomic number 11 and mass number 23 has how many neutrons?", options:{A:"11",B:"23",C:"12",D:"34"}, answer:"C", explanation:"Neutrons = Mass number − Atomic number = 23 − 11 = 12. This element is sodium (Na). Protons = 11; electrons = 11 (neutral atom); neutrons = 12." },
+  { id:"ch2_3",  question:"Isotopes are atoms of the same element that have", options:{A:"The same mass number but different atomic numbers",B:"The same atomic number but different mass numbers",C:"The same number of neutrons but different protons",D:"Identical chemical and physical properties"}, answer:"B", explanation:"Isotopes have the same number of protons (same element, same atomic number) but different numbers of neutrons, giving different mass numbers. Example: ¹²C and ¹⁴C both carbon, different masses." },
+  { id:"ch2_4",  question:"In the Haber process, 14 g of nitrogen reacts with excess hydrogen. If the actual yield of ammonia is 12 g, what is the percentage yield? (N=14, H=1)", options:{A:"35.3%",B:"70.6%",C:"50%",D:"60%"}, answer:"B", explanation:"N₂ + 3H₂ → 2NH₃. Moles N₂ = 14/28 = 0.5 mol. Theoretical moles NH₃ = 2 × 0.5 = 1 mol. Molar mass NH₃ = 17 g/mol. Theoretical yield = 1 × 17 = 17 g. % yield = (12/17) × 100 = 70.6%. Yields below 100% occur due to reversibility, side reactions, and incomplete reactions." },
+  { id:"ch2_5",  question:"What mass of sodium chloride is produced when 4 g of sodium hydroxide reacts completely with excess hydrochloric acid? (Na=23, O=16, H=1, Cl=35.5)", options:{A:"5.85 g",B:"4 g",C:"11.7 g",D:"2.93 g"}, answer:"A", explanation:"NaOH + HCl → NaCl + H₂O. Molar mass NaOH = 40 g/mol. Moles NaOH = 4/40 = 0.1 mol. 1:1 ratio, so moles NaCl = 0.1 mol. Molar mass NaCl = 23 + 35.5 = 58.5 g/mol. Mass NaCl = 0.1 × 58.5 = 5.85 g." },
+  { id:"ch2_6",  question:"How many molecules are present in 11 g of carbon dioxide? (C=12, O=16, Avogadro's number = 6.02 × 10²³)", options:{A:"6.02 × 10²³",B:"1.505 × 10²³",C:"3.01 × 10²³",D:"1.2 × 10²⁴"}, answer:"B", explanation:"Molar mass CO₂ = 44 g/mol. Moles of CO₂ = 11/44 = 0.25 mol. Number of molecules = 0.25 × 6.02 × 10²³ = 1.505 × 10²³. One mole of ANY substance contains 6.02 × 10²³ particles (Avogadro's number)." },
+  { id:"ch2_7",  question:"Which gas is produced when a metal carbonate reacts with dilute acid?", options:{A:"Hydrogen",B:"Oxygen",C:"Carbon dioxide",D:"Nitrogen"}, answer:"C", explanation:"Metal carbonate + acid → salt + water + CO₂. E.g. CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. CO₂ turns limewater milky, the standard test for the gas." },
+  { id:"ch2_8",  question:"The molar mass of carbon dioxide (CO₂) is approximately (C=12, O=16)", options:{A:"28 g/mol",B:"44 g/mol",C:"32 g/mol",D:"22 g/mol"}, answer:"B", explanation:"CO₂: C = 12; O₂ = 16 × 2 = 32. Total = 44 g/mol. 1 mole of CO₂ = 44 g = 6.02 × 10²³ molecules and occupies 22.4 L at STP." },
+  { id:"ch2_9",  question:"An oxide that reacts with both acids and bases is called", options:{A:"Basic oxide",B:"Acidic oxide",C:"Neutral oxide",D:"Amphoteric oxide"}, answer:"D", explanation:"Amphoteric oxides react with acids AND bases. Example: Al₂O₃ reacts with HCl (acid) and NaOH (base). Basic oxides react with acids only. Acidic oxides react with bases only." },
+  { id:"ch2_10", question:"What is the oxidation state of manganese in KMnO₄? (K = +1, O = −2)", options:{A:"+4",B:"+6",C:"+7",D:"+3"}, answer:"C", explanation:"KMnO₄ is neutral (charge = 0). K = +1; O × 4 = −8. So: +1 + Mn + (−8) = 0 → Mn = +7. Manganese has an oxidation state of +7 in potassium permanganate, a powerful oxidising agent. Compare: MnO₂ where Mn = +4." },
+  { id:"ch2_11", question:"In the electrolysis of dilute H₂SO₄, hydrogen gas is produced at the", options:{A:"Anode",B:"Cathode",C:"Electrolyte",D:"Salt bridge"}, answer:"B", explanation:"At the cathode (negative electrode), H⁺ ions gain electrons: 2H⁺ + 2e⁻ → H₂. At the anode, water is oxidised producing O₂. Cathode = reduction; Anode = oxidation." },
+  { id:"ch2_12", question:"Which law states that gases combine in simple whole-number ratios by volume at constant temperature and pressure?", options:{A:"Boyle's Law",B:"Charles's Law",C:"Gay-Lussac's Law of Combining Volumes",D:"Dalton's Law"}, answer:"C", explanation:"Gay-Lussac's Law: H₂ + Cl₂ → 2HCl (1:1:2 ratio by volume). Boyle's = P and V. Charles's = V and T. Dalton's = partial pressures." },
+  { id:"ch2_13", question:"Which of the following correctly describes an exothermic reaction?", options:{A:"Energy is absorbed from the surroundings",B:"The products have more energy than the reactants",C:"Heat is released to the surroundings",D:"The reaction only occurs at high temperatures"}, answer:"C", explanation:"Exothermic reactions release heat, the surroundings become warmer. ΔH is negative. Examples: combustion, neutralisation, respiration. Endothermic reactions absorb heat." },
+  { id:"ch2_14", question:"The chemical formula for calcium carbonate is", options:{A:"CaC₂",B:"CaCO₃",C:"Ca(HCO₃)₂",D:"CaO"}, answer:"B", explanation:"Calcium carbonate (CaCO₃) is the main component of limestone, chalk, and marble. CaO = calcium oxide (quicklime). Ca(HCO₃)₂ = calcium bicarbonate (in hard water)." },
+  { id:"ch2_15", question:"Reduction in a chemical reaction involves", options:{A:"Gain of oxygen or loss of hydrogen",B:"Loss of electrons or gain of oxygen",C:"Gain of electrons or loss of oxygen",D:"Loss of protons from the nucleus"}, answer:"C", explanation:"Reduction: gain of electrons (OIL RIG, Oxidation Is Loss, Reduction Is Gain). Equivalent to: loss of oxygen OR gain of hydrogen. The reducing agent is itself oxidised." },
+  { id:"ch2_16", question:"Which of the following is a covalent compound?", options:{A:"NaCl",B:"MgO",C:"CO₂",D:"KBr"}, answer:"C", explanation:"CO₂ is formed by sharing electrons between C and O, covalent bonding. NaCl, MgO, and KBr are all ionic compounds formed by electron transfer between metals and non-metals." },
+  { id:"ch2_17", question:"The reactivity series lists metals in order of their", options:{A:"Melting points",B:"Density",C:"Tendency to form positive ions by losing electrons",D:"Atomic mass"}, answer:"C", explanation:"The reactivity series ranks metals by their tendency to lose electrons (be oxidised). More reactive metals displace less reactive ones from their salt solutions. K, Na, Ca are most reactive." },
+  { id:"ch2_18", question:"Rusting of iron is best prevented by", options:{A:"Placing it near water",B:"Leaving it in oxygen-rich environments",C:"Galvanising (coating with zinc)",D:"Exposing it to acid rain"}, answer:"C", explanation:"Galvanising coats iron with zinc, which is more reactive, so zinc oxidises preferentially, protecting the iron even when the coating is scratched (sacrificial protection)." },
+  { id:"ch2_19", question:"Avogadro's number (6.02 × 10²³) represents the number of", options:{A:"Grams in one mole",B:"Molecules in 22.4 litres of any gas at STP",C:"Particles in one mole of a substance",D:"Electrons in one atom"}, answer:"C", explanation:"One mole of any substance contains 6.02 × 10²³ particles (atoms, molecules, ions). At STP, one mole of any ideal gas occupies 22.4 litres." },
+  { id:"ch2_20", question:"The IUPAC name for CH₃CH₂OH is", options:{A:"Methanol",B:"Ethanol",C:"Propanol",D:"Butanol"}, answer:"B", explanation:"CH₃CH₂OH has 2 carbon atoms and an -OH (hydroxyl) group, making it ethanol. Methanol = CH₃OH (1C). Propanol = C₃H₇OH (3C). Butanol = C₄H₉OH (4C)." },
+  { id:"ch2_21", question:"What type of reaction occurs when ethene reacts with bromine water?", options:{A:"Substitution",B:"Elimination",C:"Addition",D:"Oxidation"}, answer:"C", explanation:"Alkenes (containing C=C double bonds) undergo addition reactions, the double bond breaks and atoms add across it. CH₂=CH₂ + Br₂ → CH₂BrCH₂Br. Bromine water is decolourised, a test for unsaturation." },
+  { id:"ch2_22", question:"Which indicator turns red in an acidic solution?", options:{A:"Phenolphthalein",B:"Methyl orange",C:"Universal indicator",D:"Litmus"}, answer:"D", explanation:"Litmus turns red in acid and blue in alkali. Phenolphthalein is colourless in acid, pink in alkali. Methyl orange is red in acid, yellow in alkali." },
+  { id:"ch2_23", question:"In the electrolysis of silver nitrate solution, what mass of silver is deposited when a current of 0.5 A flows for 32 minutes and 10 seconds? (Ag = 108, F = 96500 C/mol)", options:{A:"1.08 g",B:"2.16 g",C:"0.54 g",D:"5.4 g"}, answer:"A", explanation:"Q = It = 0.5 × 1930 = 965 C. Moles e⁻ = 965/96500 = 0.01 mol. Ag⁺ + e⁻ → Ag (1:1 ratio). Moles Ag = 0.01 mol. Mass Ag = 0.01 × 108 = 1.08 g. Faraday's First Law: mass deposited is proportional to quantity of charge." },
+  { id:"ch2_24", question:"When sodium hydroxide solution is added to iron(III) chloride solution, the precipitate formed is", options:{A:"Iron metal",B:"Iron(III) oxide",C:"Iron(III) hydroxide",D:"Sodium chloride"}, answer:"C", explanation:"FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl. Iron(III) hydroxide forms a reddish-brown precipitate, the standard laboratory test for Fe³⁺ ions." },
+  { id:"ch2_25", question:"The number of moles in 44 g of CO₂ is (C = 12, O = 16)", options:{A:"0.5 mol",B:"1 mol",C:"2 mol",D:"44 mol"}, answer:"B", explanation:"Molar mass of CO₂ = 12 + (16 × 2) = 44 g/mol. Moles = mass/molar mass = 44/44 = 1 mol." },
+  { id:"ch2_26", question:"Fractional distillation is used to separate", options:{A:"A solid dissolved in a liquid",B:"Two immiscible liquids",C:"Miscible liquids with different boiling points",D:"A mixture of gases at room temperature"}, answer:"C", explanation:"Fractional distillation separates miscible liquids (e.g. ethanol/water, crude oil fractions) with different boiling points. Separating funnel = immiscible liquids." },
+  { id:"ch2_27", question:"Which of the following correctly describes a saturated hydrocarbon?", options:{A:"Contains at least one carbon-carbon double bond",B:"Contains only single bonds between carbon atoms",C:"Has the general formula CnH2n",D:"Decolourises bromine water rapidly"}, answer:"B", explanation:"Saturated hydrocarbons (alkanes) contain only single C-C bonds. General formula: CₙH₂ₙ₊₂. Unsaturated hydrocarbons contain double or triple bonds and decolourise bromine water." },
+  { id:"ch2_28", question:"In a voltaic (galvanic) cell, oxidation occurs at the", options:{A:"Cathode",B:"Anode",C:"Salt bridge",D:"Electrolyte"}, answer:"B", explanation:"In electrochemical cells: Anode = oxidation (loses electrons); Cathode = reduction (gains electrons). Memory aid: An Ox, Red Cat, Anode = Oxidation, Cathode = Reduction." },
+  { id:"ch2_29", question:"Hardness of water is caused by the presence of dissolved", options:{A:"Sodium chloride",B:"Calcium and magnesium salts",C:"Iron and copper salts",D:"Potassium nitrate"}, answer:"B", explanation:"Hard water contains dissolved Ca²⁺ and Mg²⁺ ions, mainly as bicarbonates (temporary hardness) or sulphates/chlorides (permanent hardness). They prevent soap from lathering." },
+  { id:"ch2_30", question:"The Haber process is used to produce", options:{A:"Sulphuric acid",B:"Sodium hydroxide",C:"Ammonia",D:"Nitric acid"}, answer:"C", explanation:"Haber process: N₂ + 3H₂ ⇌ 2NH₃. Conditions: 450°C, 200 atm, iron catalyst. Ammonia is essential for fertiliser production." },
+  { id:"ch2_31", question:"For the equilibrium: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) ΔH = −196 kJ/mol. Which change increases the equilibrium yield of SO₃?", options:{A:"Increasing temperature",B:"Decreasing pressure",C:"Removing SO₃ as it forms",D:"Adding an inert gas at constant volume"}, answer:"C", explanation:"Le Chatelier: removing a product (SO₃) drives the equilibrium forward to replace it, increasing yield. (A) Increasing temperature favours the endothermic (reverse) reaction, reduces yield. (B) Decreasing pressure favours the side with MORE moles of gas (2+1=3 left vs 2 right), reduces yield. (D) Adding inert gas at constant volume doesn't change partial pressures, no effect." },
+  { id:"ch2_32", question:"In the Contact process, sulphur trioxide is produced by", options:{A:"Burning sulphur in excess air only",B:"Reacting H₂SO₄ with water",C:"Oxidising SO₂ over a vanadium(V) oxide catalyst",D:"Electrolysis of sulphuric acid"}, answer:"C", explanation:"Stage 2 of Contact process: 2SO₂ + O₂ ⇌ 2SO₃ over V₂O₅ catalyst at 450°C, 1 atm. SO₃ is then absorbed in oleum to produce H₂SO₄." },
+  { id:"ch2_33", question:"The empirical formula of glucose (C₆H₁₂O₆) is", options:{A:"C₆H₁₂O₆",B:"CH₂O",C:"C₂H₄O₂",D:"C₃H₆O₃"}, answer:"B", explanation:"Empirical formula = simplest whole-number ratio. C:H:O in glucose = 6:12:6 = 1:2:1 = CH₂O. Molecular formula (C₆H₁₂O₆) is 6 times the empirical formula." },
+  { id:"ch2_34", question:"Which of the following gases has a pungent smell and turns moist red litmus blue?", options:{A:"Chlorine",B:"Sulphur dioxide",C:"Ammonia",D:"Hydrogen sulphide"}, answer:"C", explanation:"Ammonia (NH₃): pungent smell, alkaline (turns red litmus blue), less dense than air. Chlorine = yellow-green, bleaches litmus. SO₂ = choking smell, acidic. H₂S = rotten egg smell." },
+  { id:"ch2_35", question:"In the electrolysis of brine (concentrated NaCl solution), chlorine gas is produced at the", options:{A:"Cathode",B:"Salt bridge",C:"Anode",D:"Electrolyte"}, answer:"C", explanation:"At the anode (positive): Cl⁻ ions are oxidised, 2Cl⁻ → Cl₂ + 2e⁻. At the cathode: H⁺ ions are reduced, 2H⁺ + 2e⁻ → H₂. NaOH remains in solution." },
+  { id:"ch2_36", question:"Which of the following is a property of ionic compounds?", options:{A:"Low melting points",B:"Conduct electricity when dissolved in water or molten",C:"Do not dissolve in water",D:"Exist as individual molecules"}, answer:"B", explanation:"Ionic compounds conduct electricity when dissolved (ions free to move in solution) or when molten. They have high melting points, dissolve in polar solvents, and form lattice structures, not individual molecules." },
+  { id:"ch2_37", question:"What volume of oxygen at STP is needed to completely burn 4 g of hydrogen? (H=1, molar volume = 22.4 L/mol)", options:{A:"22.4 L",B:"44.8 L",C:"11.2 L",D:"5.6 L"}, answer:"A", explanation:"2H₂ + O₂ → 2H₂O. Moles of H₂ = 4/2 = 2 mol. From equation: 2 mol H₂ needs 1 mol O₂. Moles O₂ = 1 mol. Volume = 1 × 22.4 = 22.4 L at STP. Always balance the equation first before working out mole ratios." },
+  { id:"ch2_38", question:"Ethanol undergoes complete combustion in excess oxygen. Which of the following is the correctly balanced equation?", options:{A:"C₂H₅OH + 2O₂ → 2CO₂ + 3H₂O",B:"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O",C:"C₂H₅OH + O₂ → CO₂ + H₂O",D:"2C₂H₅OH + 5O₂ → 4CO₂ + 6H₂O"}, answer:"B", explanation:"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Check: Left: C=2, H=6, O=7 (1+6). Right: C=2, H=6, O=7 (4+3). Balanced. Complete combustion of any hydrocarbon or alcohol produces only CO₂ and H₂O. Incomplete combustion produces CO (toxic) and/or C (soot)." },
+  { id:"ch2_39", question:"The main ore of iron is", options:{A:"Bauxite",B:"Galena",C:"Haematite",D:"Malachite"}, answer:"C", explanation:"Haematite (Fe₂O₃) is the principal ore of iron, reduced in a blast furnace using coke and limestone. Bauxite = aluminium; Galena = lead; Malachite = copper." },
+  { id:"ch2_40", question:"Which of the following is a polymer?", options:{A:"Glucose",B:"Ethanol",C:"Starch",D:"Carbon dioxide"}, answer:"C", explanation:"Starch is a natural polymer of glucose, made of thousands of glucose monomers joined by glycosidic bonds. Nylon, PVC, and polyethylene are synthetic polymers. Glucose and ethanol are simple molecules." }
+]; // end Chemistry
+
+
+// ── PHYSICS ──────────────────────────────────────────────────
+DB["Physics"][2] = [
+  { id:"ph2_1",  question:"A ball is thrown horizontally from the top of a cliff 20 m high with a speed of 15 m/s. How long does it take to reach the ground? (g = 10 m/s²)", options:{A:"1 s",B:"2 s",C:"3 s",D:"4 s"}, answer:"B", explanation:"Vertically: h = ½gt². 20 = ½ × 10 × t². t² = 4. t = 2 s. The horizontal speed does not affect the time of fall, only the vertical component matters. Horizontal distance = 15 × 2 = 30 m (not asked here)." },
+  { id:"ph2_2",  question:"A 2 kg ball moving at 6 m/s collides with a stationary 4 kg ball. After collision they stick together. What is their common velocity after collision?", options:{A:"6 m/s",B:"3 m/s",C:"2 m/s",D:"1.5 m/s"}, answer:"C", explanation:"Conservation of momentum: total momentum before = total momentum after. m₁u₁ + m₂u₂ = (m₁+m₂)v. (2×6) + (4×0) = (2+4)v. 12 = 6v. v = 2 m/s. This is a perfectly inelastic collision, maximum kinetic energy is lost." },
+  { id:"ph2_3",  question:"A cricket ball of mass 0.15 kg is bowled at 30 m/s and is hit back at 20 m/s. If the bat is in contact with the ball for 0.002 s, what is the average force exerted by the bat?", options:{A:"3750 N",B:"1500 N",C:"750 N",D:"7500 N"}, answer:"A", explanation:"Impulse = change in momentum = m(v − u) = 0.15 × (20 − (−30)) = 0.15 × 50 = 7.5 N·s. (Ball reverses direction, so u = −30 when taking hitting direction as positive.) F = Impulse/t = 7.5/0.002 = 3750 N." },
+  { id:"ph2_4",  question:"A spring of natural length 20 cm is stretched to 28 cm by a force of 4 N. What is the spring constant? What force would stretch it to 35 cm?", options:{A:"k = 50 N/m, F = 7.5 N",B:"k = 0.5 N/m, F = 7.5 N",C:"k = 50 N/m, F = 15 N",D:"k = 20 N/m, F = 15 N"}, answer:"A", explanation:"Extension = 28 − 20 = 8 cm = 0.08 m. k = F/e = 4/0.08 = 50 N/m. New extension = 35 − 20 = 15 cm = 0.15 m. F = ke = 50 × 0.15 = 7.5 N. Always use extension (not total length) in Hooke's Law." },
+  { id:"ph2_5",  question:"A block of wood has mass 600 g and volume 1000 cm³. Will it float in water? What fraction of it will be submerged? (density of water = 1 g/cm³)", options:{A:"It sinks; 100% submerged",B:"It floats; 60% submerged",C:"It floats; 40% submerged",D:"It floats; 100% submerged"}, answer:"B", explanation:"Density of wood = 600/1000 = 0.6 g/cm³ < 1 g/cm³ (water), so it floats. For floating: weight = upthrust. Fraction submerged = density of object/density of fluid = 0.6/1 = 0.6 = 60%. The submerged 60% displaces water equal to the wood's total weight." },
+  { id:"ph2_6",  question:"In a hydraulic press, a force of 50 N is applied to a small piston of area 0.002 m². What force is exerted by the large piston of area 0.05 m²?", options:{A:"2 N",B:"2500 N",C:"1250 N",D:"100 N"}, answer:"C", explanation:"Pascal's principle: pressure is transmitted equally. P = F₁/A₁ = 50/0.002 = 25,000 Pa. F₂ = P × A₂ = 25,000 × 0.05 = 1250 N. Mechanical advantage = A₂/A₁ = 0.05/0.002 = 25. A small force is multiplied 25 times." },
+  { id:"ph2_7",  question:"A gas occupies 500 cm³ at 27°C and 100 kPa pressure. What volume does it occupy at 127°C and 200 kPa? (Use combined gas law)", options:{A:"250 cm³",B:"333 cm³",C:"375 cm³",D:"500 cm³"}, answer:"B", explanation:"Combined gas law: P₁V₁/T₁ = P₂V₂/T₂. Convert temperatures to Kelvin: T₁ = 300 K, T₂ = 400 K. V₂ = P₁V₁T₂/(T₁P₂) = (100 × 500 × 400)/(300 × 200) = 20,000,000/60,000 ≈ 333 cm³." },
+  { id:"ph2_8",  question:"A 2 kg stone is released from rest at a height of 45 m. What is its velocity just before it hits the ground? (g = 10 m/s², ignore air resistance)", options:{A:"30 m/s",B:"15 m/s",C:"900 m/s",D:"450 m/s"}, answer:"A", explanation:"Using conservation of energy: GPE lost = KE gained. mgh = ½mv². v² = 2gh = 2 × 10 × 45 = 900. v = √900 = 30 m/s. The mass cancels, any object falls at the same speed regardless of mass (in the absence of air resistance)." },
+  { id:"ph2_9",  question:"Three resistors of 4 Ω, 6 Ω, and 12 Ω are connected in parallel across a 12 V battery. What is the total current drawn from the battery?", options:{A:"0.33 A",B:"6 A",C:"22 Ω",D:"2 A"}, answer:"B", explanation:"In parallel, voltage across each = 12 V. I₁ = 12/4 = 3 A; I₂ = 12/6 = 2 A; I₃ = 12/12 = 1 A. Total I = 3+2+1 = 6 A. Alternatively: 1/R = 1/4+1/6+1/12 = 3/12+2/12+1/12 = 6/12 = 1/2, so R = 2 Ω. I = V/R = 12/2 = 6 A." },
+  { id:"ph2_10", question:"The splitting of white light into its component colours by a prism is called", options:{A:"Reflection",B:"Refraction",C:"Dispersion",D:"Diffraction"}, answer:"C", explanation:"Dispersion: different wavelengths refract by different amounts. Violet refracts most; red refracts least. Spectrum order: ROYGBIV. Rainbows form by dispersion in raindrops." },
+  { id:"ph2_11", question:"A step-down transformer has 2000 primary turns and 500 secondary turns. The primary voltage is 240 V and the primary current is 0.5 A. What is the secondary current if the transformer is 80% efficient?", options:{A:"1.6 A",B:"8 A",C:"2 A",D:"0.8 A"}, answer:"A", explanation:"Secondary voltage: Vₛ = Vₚ × (Nₛ/Nₚ) = 240 × (500/2000) = 60 V. Input power = Vₚ × Iₚ = 240 × 0.5 = 120 W. Output power = 80% × 120 = 96 W. Iₛ = Output power/Vₛ = 96/60 = 1.6 A." },
+  { id:"ph2_12", question:"A 60 W bulb is left on for 5 hours every day for 30 days. If electricity costs ₦100 per kWh, what is the total cost?", options:{A:"₦90",B:"₦900",C:"₦9,000",D:"₦450"}, answer:"B", explanation:"Energy = Power × time = 60 W × (5 × 30) h = 60 × 150 = 9000 Wh = 9 kWh. Cost = 9 kWh × ₦100/kWh = ₦900. Energy consumed in kilowatt-hours (kWh): 1 kWh = 1000 W running for 1 hour." },
+  { id:"ph2_13", question:"A battery has an EMF of 6 V and internal resistance of 0.5 Ω. It is connected to an external resistance of 2.5 Ω. What is the terminal voltage?", options:{A:"6 V",B:"5 V",C:"1 V",D:"4 V"}, answer:"B", explanation:"I = EMF/(R + r) = 6/(2.5 + 0.5) = 6/3 = 2 A. Terminal voltage = EMF − Ir = 6 − (2 × 0.5) = 6 − 1 = 5 V. The voltage drop across the internal resistance (Ir) means the terminal voltage is always less than the EMF when current flows." },
+  { id:"ph2_14", question:"A radioactive sample initially contains 80 g of a substance with a half-life of 5 years. How much of the original substance remains after 20 years?", options:{A:"20 g",B:"10 g",C:"5 g",D:"40 g"}, answer:"C", explanation:"Number of half-lives = 20/5 = 4. Mass remaining = 80 × (½)⁴ = 80 × 1/16 = 5 g. After each half-life: 80 → 40 → 20 → 10 → 5 g. The radioactive material continuously decreases, it never reaches exactly zero." },
+  { id:"ph2_15", question:"A 500 g metal block is heated from 25°C to 125°C using 20,000 J of energy. What is the specific heat capacity of the metal?", options:{A:"200 J/kg°C",B:"400 J/kg°C",C:"40 J/kg°C",D:"2000 J/kg°C"}, answer:"B", explanation:"Q = mcΔT → c = Q/(mΔT) = 20000/(0.5 × 100) = 20000/50 = 400 J/kg°C. This is close to the specific heat capacity of iron (~450 J/kg°C). Compare with water: 4200 J/kg°C, much higher, which is why metals heat and cool faster than water." },
+  { id:"ph2_16", question:"A diver is 15 m below the surface of sea water (density 1025 kg/m³). What is the total pressure on the diver? (atmospheric pressure = 101,325 Pa, g = 10 m/s²)", options:{A:"153,750 Pa",B:"255,075 Pa",C:"101,325 Pa",D:"354,075 Pa"}, answer:"B", explanation:"Pressure due to water column = ρgh = 1025 × 10 × 15 = 153,750 Pa. Total pressure = atmospheric + water = 101,325 + 153,750 = 255,075 Pa ≈ 2.55 atm. Pressure increases by about 1 atm per 10 m depth, relevant to diving and submarine design." },
+  { id:"ph2_17", question:"A radioactive sample has a half-life of 10 years. What fraction remains after 30 years?", options:{A:"1/2",B:"1/4",C:"1/8",D:"1/16"}, answer:"C", explanation:"30 years = 3 half-lives. Fraction = (½)³ = ⅛. After 10 years: ½. After 20 years: ¼. After 30 years: ⅛." },
+  { id:"ph2_18", question:"Gamma radiation is best described as", options:{A:"A stream of helium nuclei",B:"A stream of high-energy electrons",C:"High-energy electromagnetic radiation with no charge and no mass",D:"A stream of neutrons"}, answer:"C", explanation:"Gamma = electromagnetic radiation, no mass, no charge, travels at speed of light. Most penetrating, stopped only by thick lead or concrete. Alpha = helium nucleus. Beta = electron." },
+  { id:"ph2_19", question:"Latent heat of vaporisation is the heat energy needed to", options:{A:"Raise the temperature of 1 kg of liquid by 1°C",B:"Convert 1 kg of solid to liquid at constant temperature",C:"Convert 1 kg of liquid to gas at constant temperature",D:"Lower the temperature of 1 kg of gas by 1°C"}, answer:"C", explanation:"Q = mL. No temperature change occurs, energy breaks intermolecular bonds, not increasing kinetic energy. Latent heat of fusion converts solid to liquid." },
+  { id:"ph2_20", question:"Thermal expansion occurs because when a substance is heated", options:{A:"Its molecules become larger",B:"Its molecules vibrate more vigorously and move further apart",C:"New molecules are added",D:"Its density increases"}, answer:"B", explanation:"Heating increases kinetic energy, molecules vibrate more and average separation increases. Applications: bimetallic strips, bridge expansion joints, liquid-in-glass thermometers." },
+  { id:"ph2_21", question:"An object is placed 30 cm in front of a concave mirror of focal length 10 cm. Where is the image formed? Is it real or virtual?", options:{A:"15 cm in front, real",B:"15 cm behind virtual",C:"−15 cm (virtual)",D:"20 cm in front, real"}, answer:"A", explanation:"Mirror formula: 1/f = 1/v + 1/u. Using sign convention (distances in front = negative): u = −30 cm, f = −10 cm. 1/v = 1/f − 1/u = 1/(−10) − 1/(−30) = −3/30 + 1/30 = −2/30. v = −15 cm. Negative v means image is 15 cm in front of the mirror, real and inverted." },
+  { id:"ph2_22", question:"Light travels from water (n = 1.33) into air (n = 1.0) at an angle of incidence of 30°. What is the angle of refraction? (sin 30° = 0.5)", options:{A:"19.5°",B:"41.8°",C:"48.6°",D:"90°"}, answer:"B", explanation:"Snell's Law: n₁ sinθ₁ = n₂ sinθ₂. 1.33 × 0.5 = 1.0 × sinθ₂. sinθ₂ = 0.665. θ₂ = sin⁻¹(0.665) ≈ 41.8°. Light bends away from the normal moving into a less dense medium. Critical angle for water-air = sin⁻¹(1/1.33) ≈ 48.8°." },
+  { id:"ph2_23", question:"The Doppler effect refers to", options:{A:"The splitting of white light into colours",B:"The apparent change in frequency of a wave when source and observer move relative to each other",C:"The bending of waves around obstacles",D:"The superposition of two waves of the same frequency"}, answer:"B", explanation:"Source moving toward observer → higher observed frequency. Moving away → lower frequency. Examples: ambulance siren pitch change; red shift of galaxies." },
+  { id:"ph2_24", question:"The loudness of a sound depends on its", options:{A:"Frequency",B:"Wavelength",C:"Amplitude",D:"Speed"}, answer:"C", explanation:"Loudness is determined by amplitude, greater amplitude = louder sound. Pitch is determined by frequency. Loudness is measured in decibels (dB)." },
+  { id:"ph2_25", question:"For total internal reflection to occur", options:{A:"Light must travel from less dense to denser medium",B:"Angle of incidence must be less than the critical angle",C:"Light must travel from denser to less dense medium at an angle greater than the critical angle",D:"The two media must have the same refractive index"}, answer:"C", explanation:"Two conditions required: (1) denser → less dense medium AND (2) angle of incidence > critical angle. Both must be met. If either is absent, refraction occurs." },
+  { id:"ph2_26", question:"A car engine produces a driving force of 2500 N. The car travels at 20 m/s. What is the engine's power output? If fuel provides 5,000,000 J of energy, how long can the car maintain this speed?", options:{A:"50,000 W; 100 s",B:"50,000 W; 200 s",C:"125 W; 200 s",D:"2500 W; 100 s"}, answer:"A", explanation:"P = Fv = 2500 × 20 = 50,000 W = 50 kW. Time = Energy/Power = 5,000,000/50,000 = 100 s. This links P = Fv with the energy equation E = Pt. Real engines are less efficient, some energy is lost as heat." },
+  { id:"ph2_27", question:"Resonance occurs when", options:{A:"Two waves cancel each other completely",B:"A body is forced to vibrate at its natural frequency, producing large amplitude vibrations",C:"Sound reflects off a surface to produce an echo",D:"Light waves interfere constructively"}, answer:"B", explanation:"When driving frequency = natural frequency, energy transfer is maximised. Examples: Tacoma Narrows bridge collapse; opera singer breaking a glass; microwave ovens." },
+  { id:"ph2_28", question:"A Geiger-Müller (GM) tube is used to", options:{A:"Generate radioactive particles",B:"Measure the speed of alpha particles",C:"Detect ionising radiation",D:"Shield workers from gamma radiation"}, answer:"C", explanation:"Radiation entering the GM tube ionises the gas inside, producing a current pulse registered as a count. Count rate indicates radiation intensity. Used with a ratemeter or counter." },
+  { id:"ph2_29", question:"A tuning fork vibrates at 440 Hz. If the speed of sound in air is 330 m/s, what is the wavelength of the sound produced?", options:{A:"0.75 m",B:"145,200 m",C:"1.33 m",D:"0.5 m"}, answer:"A", explanation:"λ = v/f = 330/440 = 0.75 m. The wave equation v = fλ links speed, frequency, and wavelength. Middle A (440 Hz) has a wavelength of 75 cm in air. As frequency increases, wavelength decreases for the same wave speed." },
+  { id:"ph2_30", question:"The correct unit of impulse is", options:{A:"Newton (N)",B:"Joule (J)",C:"Newton-second (N·s)",D:"Watt (W)"}, answer:"C", explanation:"Impulse = F × t. Unit: N·s = kg·m/s (same as momentum). Impulse-momentum theorem: Ft = Δ(mv). A large force for a short time = a small force for a long time (same impulse)." },
+  { id:"ph2_31", question:"A car of mass 1000 kg travelling at 20 m/s has a kinetic energy of", options:{A:"20,000 J",B:"200,000 J",C:"400,000 J",D:"2,000 J"}, answer:"B", explanation:"KE = ½mv² = ½ × 1000 × 400 = 200,000 J = 200 kJ. This energy must be dissipated as heat when braking to a stop." },
+  { id:"ph2_32", question:"A pulley system has VR = 4, load = 200 N, efficiency = 75%. The effort required is", options:{A:"50 N",B:"66.7 N",C:"150 N",D:"800 N"}, answer:"B", explanation:"MA = (Efficiency × VR) ÷ 100 = (75 × 4) ÷ 100 = 3. Effort = Load/MA = 200/3 = 66.7 N." },
+  { id:"ph2_33", question:"Heat conducted through a solid depends on", options:{A:"The colour of the material only",B:"Temperature difference, cross-sectional area, and thermal conductivity",C:"The speed of sound in the material",D:"The electrical resistance of the material"}, answer:"B", explanation:"Q/t = kAΔT/d. Good conductors (metals) have high k values. Insulators (wood, rubber, air) have low k values. Heat flows from high to low temperature." },
+  { id:"ph2_34", question:"A convex lens forms an image when the object is placed beyond 2F. The image is", options:{A:"Virtual, upright, and magnified",B:"Real, inverted, and diminished",C:"Real, inverted, and same size",D:"Virtual, inverted, and magnified"}, answer:"B", explanation:"Object beyond 2F → real, inverted, diminished image. This is how a camera works, the scene (far beyond 2F) forms a small, inverted real image on the sensor." },
+  { id:"ph2_35", question:"Which phenomenon provides evidence that light travels as a wave?", options:{A:"The photoelectric effect",B:"Diffraction and interference of light",C:"Reflection from a mirror",D:"Refraction through a lens"}, answer:"B", explanation:"Diffraction and interference are exclusive to wave behaviour. The photoelectric effect proves the particle (photon) nature, demonstrating wave-particle duality." },
+  { id:"ph2_36", question:"An object 4 cm tall is placed 20 cm from a convex lens of focal length 15 cm. What is the height of the image formed?", options:{A:"12 cm",B:"8 cm",C:"16 cm",D:"6 cm"}, answer:"A", explanation:"Lens formula: 1/v − 1/u = 1/f. u = −20 cm, f = +15 cm. 1/v = 1/f + 1/u = 1/15 + 1/(-20) = 4/60 - 3/60 = 1/60, so v = 60 cm. Magnification m = v/u = 60/20 = 3. Image height = 3 × 4 = 12 cm. The image is real, inverted, and magnified because the object is placed between F and 2F." },
+  { id:"ph2_37", question:"Surface tension causes", options:{A:"Liquids to evaporate at room temperature",B:"Liquids to expand when heated",C:"The surface of a liquid to behave like a stretched elastic membrane",D:"Liquids to flow downhill"}, answer:"C", explanation:"Surface tension arises from cohesive forces, molecules at the surface have a net inward pull. This allows insects to walk on water, needles to float, and water to form droplets." },
+  { id:"ph2_38", question:"The correct condition for a body to float is", options:{A:"Weight > upthrust",B:"Density of body > density of fluid",C:"Weight of body = upthrust (weight of fluid displaced)",D:"Volume of body = volume of fluid"}, answer:"C", explanation:"Principle of flotation: weight = upthrust. Weight > upthrust → sinks. Weight < upthrust → rises and partially submerges until the two balance." },
+  { id:"ph2_39", question:"In which situation is NO work done on an object?", options:{A:"A book is lifted vertically",B:"A car accelerates along a road",C:"A satellite moves in a circular orbit at constant speed",D:"A box is pushed up a ramp"}, answer:"C", explanation:"W = Fd cosθ. For a satellite, gravitational force points inward while motion is tangential, θ = 90°, cos90° = 0. No work is done, only direction changes, not speed." },
+  { id:"ph2_40", question:"An object of mass 2 kg is dropped from a height of 5 m. What is its kinetic energy just before hitting the ground? (g = 10 m/s²)", options:{A:"10 J",B:"50 J",C:"100 J",D:"20 J"}, answer:"C", explanation:"Using energy conservation: KE = GPE = mgh = 2 × 10 × 5 = 100 J. All potential energy converts to kinetic energy (ignoring air resistance)." }
+]; // end Physics
+
+
+// ── MATHEMATICS ──────────────────────────────────────────────
+DB["Mathematics"][2] = [
+
+  {
+    id: "ma2_01",
+    question: "Convert 110111₂ to base 10.",
+    options: { A: "53", B: "55", C: "47", D: "59" },
+    answer: "B",
+    explanation: "Expand using powers of 2 from right to left: 1×2⁵ + 1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 1×2⁰ = 32 + 16 + 0 + 4 + 2 + 1 = 55. Each binary digit is a coefficient of a power of 2, starting from 2⁰ on the right. Option A (53) comes from misreading the 4th bit as 0 instead of 1."
+  },
+
+  {
+    id: "ma2_02",
+    question: "Evaluate 1101₂ + 1011₂, giving your answer in base 2.",
+    options: { A: "10110₂", B: "11000₂", C: "11100₂", D: "10100₂" },
+    answer: "B",
+    explanation: "Add column by column from right, carrying when the sum reaches 2: 1+1=10 (write 0, carry 1); 0+1+1=10 (write 0, carry 1); 1+0+1=10 (write 0, carry 1); 1+1+1=11 (write 1, carry 1); final carry gives 1. Result: 11000₂. Verify in base 10: 13 + 11 = 24 = 11000₂."
+  },
+
+  {
+    id: "ma2_03",
+    question: "Rationalise the denominator and simplify: 12/(√5 + √3).",
+    options: { A: "6(√5 + √3)", B: "3(√5 - √3)", C: "6(√5 - √3)", D: "3(√5 + √3)" },
+    answer: "C",
+    explanation: "Multiply numerator and denominator by the conjugate (√5 - √3): numerator = 12(√5 - √3); denominator = (√5)² - (√3)² = 5 - 3 = 2. Result = 12(√5 - √3)/2 = 6(√5 - √3). The key step is the difference of squares identity (a + b)(a - b) = a² - b², which eliminates the surds from the denominator."
+  },
+
+  {
+    id: "ma2_04",
+    question: "Simplify: (√75 - √48)/√3.",
+    options: { A: "2", B: "√3", C: "3", D: "1" },
+    answer: "D",
+    explanation: "Simplify each surd first: √75 = √(25×3) = 5√3; √48 = √(16×3) = 4√3. Numerator = 5√3 - 4√3 = √3. So (√75 - √48)/√3 = √3/√3 = 1. Always simplify surds to the form k√n before combining or dividing. Option C (√3) is the common error of forgetting to divide numerator by denominator."
+  },
+
+  {
+    id: "ma2_05",
+    question: "Evaluate: 27^(2/3) × 8^(-1/3).",
+    options: { A: "9/2", B: "3", C: "18", D: "9/4" },
+    answer: "A",
+    explanation: "27^(2/3) = (∛27)² = 3² = 9. Rule: x^(m/n) = (ⁿ√x)^m, take the root first, then the power. 8^(-1/3) = 1/(∛8) = 1/2. Product = 9 × 1/2 = 9/2. Option B (3) is the error of computing 27^(1/3) × 8^(-1/3) instead. Option C (18) results from 9 × 2 (using 8^(1/3) instead of 8^(-1/3))."
+  },
+
+  {
+    id: "ma2_06",
+    question: "Solve for x: 4^(2x - 1) = 8^(x + 1).",
+    options: { A: "5", B: "4", C: "3", D: "7" },
+    answer: "A",
+    explanation: "Express both sides as powers of 2: 4^(2x-1) = 2^(2(2x-1)) = 2^(4x-2); 8^(x+1) = 2^(3(x+1)) = 2^(3x+3). Since the bases are equal, equate the exponents: 4x - 2 = 3x + 3; x = 5. Always convert to the same base first. Here base 2 is the natural common base since 4 = 2² and 8 = 2³."
+  },
+
+  {
+    id: "ma2_07",
+    question: "Solve: log₃(x + 4) + log₃(x - 4) = 2.",
+    options: { A: "x = 7", B: "x = 4", C: "x = 9", D: "x = 5" },
+    answer: "D",
+    explanation: "Apply the product rule: log₃[(x + 4)(x - 4)] = 2, so (x + 4)(x - 4) = 3² = 9. Expanding: x² - 16 = 9; x² = 25; x = ±5. Reject x = -5 because log₃(-5 - 4) = log₃(-9) is undefined (logarithms of negative numbers do not exist). Final answer: x = 5."
+  },
+
+  {
+    id: "ma2_08",
+    question: "Given that log₁₀ 5 = 0.6990, find log₁₀ 50.",
+    options: { A: "1.3980", B: "1.6990", C: "0.6990", D: "2.6990" },
+    answer: "B",
+    explanation: "Write 50 = 5 × 10. Using the product rule: log₁₀ 50 = log₁₀ 5 + log₁₀ 10 = 0.6990 + 1 = 1.6990. Note that log₁₀ 10 = 1 always. Option A is 2 × 0.6990, which would give log(5²) = log(25). Option D would equal log(50000), which is far too large."
+  },
+
+  {
+    id: "ma2_09",
+    question: "Express x² + 6x + 11 in the form (x + a)² + b. State the minimum value of the expression.",
+    options: { A: "Minimum = 2 at x = -3", B: "Minimum = 11 at x = 0", C: "Minimum = 9 at x = -3", D: "Minimum = 2 at x = 3" },
+    answer: "A",
+    explanation: "Complete the square: take half the coefficient of x (half of 6 is 3), square it (9), then add and subtract: x² + 6x + 11 = (x² + 6x + 9) - 9 + 11 = (x + 3)² + 2. Since (x + 3)² is always at least 0, the minimum value is 2, occurring when x = -3. Option D incorrectly uses x = +3 instead of x = -3."
+  },
+
+  {
+    id: "ma2_10",
+    question: "The quadratic equation x² + kx + 9 = 0 has equal roots. Find the positive value of k.",
+    options: { A: "3", B: "6", C: "9", D: "18" },
+    answer: "B",
+    explanation: "Equal roots occur when the discriminant equals zero: b² - 4ac = 0. With a = 1, b = k, c = 9: k² - 4(1)(9) = 0; k² = 36; k = 6 (positive value). Geometrically, equal roots mean the parabola just touches the x-axis at one point. If k were less than 6, the equation would have no real roots; if greater, it would have two distinct roots."
+  },
+
+  {
+    id: "ma2_11",
+    question: "When f(x) = 2x³ - 3x² + px + 5 is divided by (x - 2), the remainder is 7. Find p.",
+    options: { A: "-3", B: "3", C: "-1", D: "1" },
+    answer: "C",
+    explanation: "By the Remainder Theorem, the remainder when f(x) is divided by (x - 2) equals f(2). f(2) = 2(8) - 3(4) + 2p + 5 = 16 - 12 + 2p + 5 = 9 + 2p. Set equal to 7: 9 + 2p = 7; 2p = -2; p = -1. The Remainder Theorem states: remainder = f(a) when dividing by (x - a). No long division needed."
+  },
+
+  {
+    id: "ma2_12",
+    question: "Given that (x - 3) is a factor of f(x) = x³ - 6x² + 11x - 6, find all the factors.",
+    options: { A: "(x + 1)(x + 2)(x - 3)", B: "(x - 1)(x - 2)(x - 3)", C: "(x - 2)(x - 3)(x - 4)", D: "(x - 1)(x + 2)(x - 3)" },
+    answer: "B",
+    explanation: "Factor Theorem confirms: f(3) = 27 - 54 + 33 - 6 = 0. Divide x³ - 6x² + 11x - 6 by (x - 3): the quotient is x² - 3x + 2, which factorises as (x - 1)(x - 2). Full factorisation: (x - 1)(x - 2)(x - 3). Roots are x = 1, 2, and 3. Verify: sum of roots = 1+2+3 = 6 = coefficient of x² with sign change. Correct."
+  },
+
+  {
+    id: "ma2_13",
+    question: "The 5th term of an AP is 17 and the 10th term is 32. Find the first term and the common difference.",
+    options: { A: "a = 7, d = 3", B: "a = 3, d = 5", C: "a = 5, d = 4", D: "a = 5, d = 3" },
+    answer: "D",
+    explanation: "Tₙ = a + (n-1)d. Set up two equations: T₅ = a + 4d = 17 and T₁₀ = a + 9d = 32. Subtract the first from the second: 5d = 15, so d = 3. Substitute back: a + 12 = 17, so a = 5. Verify: T₁₀ = 5 + 9(3) = 32. Option D (d = 4) gives T₅ = 5+16 = 21, not 17."
+  },
+
+  {
+    id: "ma2_14",
+    question: "How many terms of the AP 3, 7, 11, 15, ... are needed for the sum to equal 820?",
+    options: { A: "18", B: "20", C: "22", D: "24" },
+    answer: "B",
+    explanation: "Here a = 3, d = 4. Sₙ = n/2[2a + (n-1)d] = n/2[6 + 4(n-1)] = n/2[4n + 2] = n(2n + 1). Set n(2n + 1) = 820: 2n² + n - 820 = 0. Factorising: (n - 20)(2n + 41) = 0. So n = 20 (reject the negative root n = -41/2). Always discard negative or non-integer values of n in AP/GP problems."
+  },
+
+  {
+    id: "ma2_15",
+    question: "Find the sum of the first 8 terms of the GP: 2, 6, 18, 54, ...",
+    options: { A: "3280", B: "6558", C: "6560", D: "3279" },
+    answer: "C",
+    explanation: "Here a = 2, r = 3, n = 8. Sₙ = a(rⁿ - 1)/(r - 1) = 2(3⁸ - 1)/(3 - 1) = 2(6561 - 1)/2 = 6560. The formula Sₙ = a(rⁿ - 1)/(r - 1) is used when r > 1. When r < 1, use Sₙ = a(1 - rⁿ)/(1 - r). Both forms are equivalent. Option A (3280) is the error of computing 2(3⁷ - 1)/2 = 3280, using n = 7 instead of 8."
+  },
+
+  {
+    id: "ma2_16",
+    question: "A GP has first term 5 and common ratio 2. Which term of the GP equals 640?",
+    options: { A: "6th term", B: "7th term", C: "8th term", D: "9th term" },
+    answer: "C",
+    explanation: "Tₙ = arⁿ⁻¹. So 5 × 2ⁿ⁻¹ = 640; 2ⁿ⁻¹ = 128 = 2⁷; therefore n - 1 = 7, giving n = 8. The 8th term equals 640. Verify: T₈ = 5 × 2⁷ = 5 × 128 = 640. Option B (7th) gives 5 × 2⁶ = 320, not 640."
+  },
+
+  {
+    id: "ma2_17",
+    question: "If f(x) = 2x + 3 and g(x) = x² - 1, find fg(2).",
+    options: { A: "49", B: "9", C: "11", D: "7" },
+    answer: "B",
+    explanation: "fg(2) means f(g(2)): apply g first, then f. Step 1: g(2) = 2² - 1 = 3. Step 2: f(3) = 2(3) + 3 = 9. The notation fg(x) = f(g(x)), the rightmost function acts first. Option C (49) is the error of computing gf(2) instead: f(2) = 7, then g(7) = 49."
+  },
+
+  {
+    id: "ma2_18",
+    question: "Find the inverse function of f(x) = (3x - 1)/2.",
+    options: { A: "f⁻¹(x) = (2x - 1)/3", B: "f⁻¹(x) = (2x + 1)/3", C: "f⁻¹(x) = (3x + 1)/2", D: "f⁻¹(x) = 3/(2x + 1)" },
+    answer: "B",
+    explanation: "Write y = (3x - 1)/2. Swap x and y to get x = (3y - 1)/2. Solve for y: 2x = 3y - 1; 3y = 2x + 1; y = (2x + 1)/3. So f⁻¹(x) = (2x + 1)/3. Verify: f(f⁻¹(x)) = f((2x+1)/3) = (3·(2x+1)/3 - 1)/2 = (2x + 1 - 1)/2 = x. Correct."
+  },
+
+  {
+    id: "ma2_19",
+    question: "Find the coordinates of the midpoint of the line segment joining A(3, -5) and B(7, 3).",
+    options: { A: "(5, -1)", B: "(4, -2)", C: "(10, -2)", D: "(5, -4)" },
+    answer: "A",
+    explanation: "Midpoint M = ((x₁ + x₂)/2, (y₁ + y₂)/2) = ((3 + 7)/2, (-5 + 3)/2) = (10/2, -2/2) = (5, -1). The midpoint is simply the average of the coordinates. Option B (4, -2) results from subtracting instead of adding in the x-coordinate."
+  },
+
+  {
+    id: "ma2_20",
+    question: "Find the equation of the perpendicular bisector of the line segment joining P(2, 1) and Q(6, 5).",
+    options: { A: "y = x + 3", B: "x + y = 9", C: "y = -x + 9", D: "x + y = 7" },
+    answer: "D",
+    explanation: "Midpoint M = ((2+6)/2, (1+5)/2) = (4, 3). Gradient of PQ = (5-1)/(6-2) = 4/4 = 1. The perpendicular gradient = -1/1 = -1 (negative reciprocal). Equation through M(4, 3) with gradient -1: y - 3 = -1(x - 4); y = -x + 7; which gives x + y = 7. Options A and C have gradient +1, not -1."
+  },
+
+  {
+    id: "ma2_21",
+    question: "Differentiate y = (2x + 3)(x² - 1) with respect to x.",
+    options: { A: "4x² + 6x - 2", B: "6x² + 6x + 2", C: "2x² + 6x - 2", D: "6x² + 6x - 2" },
+    answer: "D",
+    explanation: "Product rule: dy/dx = u'v + uv' where u = 2x + 3, u' = 2 and v = x² - 1, v' = 2x. dy/dx = 2(x² - 1) + (2x + 3)(2x) = 2x² - 2 + 4x² + 6x = 6x² + 6x - 2. Alternatively, expand first: y = 2x³ + 3x² - 2x - 3, then dy/dx = 6x² + 6x - 2. Both methods confirm A."
+  },
+
+  {
+    id: "ma2_22",
+    question: "Find the x-coordinates of the turning points of y = x³ - 3x² - 9x + 5 and determine their nature.",
+    options: { A: "x = 3 (minimum), x = -1 (maximum)", B: "x = 1 (minimum), x = -3 (maximum)", C: "x = 3 (maximum), x = -1 (minimum)", D: "x = -1 (minimum), x = 3 (maximum)" },
+    answer: "A",
+    explanation: "dy/dx = 3x² - 6x - 9 = 3(x² - 2x - 3) = 3(x - 3)(x + 1). Turning points at x = 3 and x = -1. Second derivative: d²y/dx² = 6x - 6. At x = 3: d²y/dx² = 12 > 0, so minimum. At x = -1: d²y/dx² = -12 < 0, so maximum. Rule: positive second derivative at a turning point means minimum; negative means maximum."
+  },
+
+  {
+    id: "ma2_23",
+    question: "Find the area bounded by the curve y = x² + 2, the x-axis, and the lines x = 1 and x = 3.",
+    options: { A: "26/3 sq units", B: "32/3 sq units", C: "38/3 sq units", D: "28/3 sq units" },
+    answer: "C",
+    explanation: "Area = ∫₁³ (x² + 2) dx = [x³/3 + 2x]₁³. Upper limit: 27/3 + 6 = 9 + 6 = 15. Lower limit: 1/3 + 2 = 7/3. Area = 15 - 7/3 = 45/3 - 7/3 = 38/3 square units. Since y = x² + 2 lies entirely above the x-axis for all x, the integral gives the area directly without sign complications."
+  },
+
+  {
+    id: "ma2_24",
+    question: "Evaluate: ∫₀² (3x² - 2x + 1) dx.",
+    options: { A: "4", B: "8", C: "6", D: "10" },
+    answer: "C",
+    explanation: "∫(3x² - 2x + 1) dx = x³ - x² + x. Evaluate from 0 to 2: [x³ - x² + x]₀² = (8 - 4 + 2) - (0 - 0 + 0) = 6. The constant of integration cancels in a definite integral. Option B (8) comes from computing 8 - 4 + 2 = 6 incorrectly as 8. Option D (4) is just 8 - 4, ignoring the +x term."
+  },
+
+  {
+    id: "ma2_25",
+    question: "The scores of 7 students are: 12, 15, 9, 18, 12, 20, 14. Find the median and mode.",
+    options: { A: "Median = 12, Mode = 14", B: "Median = 15, Mode = 12", C: "Median = 14, Mode = 15", D: "Median = 14, Mode = 12" },
+    answer: "D",
+    explanation: "Sort the data: 9, 12, 12, 14, 15, 18, 20. With 7 values, the median is the 4th value = 14. The mode is the value appearing most frequently: 12 appears twice, all others appear once. Mode = 12. Always sort the data before finding the median. The mean would be (9+12+12+14+15+18+20)/7 = 100/7 ≈ 14.3, different from both median and mode."
+  },
+
+  {
+    id: "ma2_26",
+    question: "The mean of 4, 7, x, 11, 9 is 8. Find the variance of the data set.",
+    options: { A: "5.6", B: "6.4", C: "7.0", D: "4.0" },
+    answer: "A",
+    explanation: "First find x: (4 + 7 + x + 11 + 9)/5 = 8; 31 + x = 40; x = 9. Data set: 4, 7, 9, 9, 11. Mean = 8. Squared deviations from mean: (4-8)² = 16; (7-8)² = 1; (9-8)² = 1; (9-8)² = 1; (11-8)² = 9. Variance = (16 + 1 + 1 + 1 + 9)/5 = 28/5 = 5.6. Variance = mean of squared deviations from the mean."
+  },
+
+  {
+    id: "ma2_27",
+    question: "The probability that it rains on any given day is 0.3. What is the probability that it does NOT rain on a particular day?",
+    options: { A: "0.3", B: "0.6", C: "0.7", D: "1.3" },
+    answer: "C",
+    explanation: "Using the complement rule: P(not rain) = 1 - P(rain) = 1 - 0.3 = 0.7. The probabilities of an event and its complement always sum to exactly 1: P(A) + P(A') = 1. Option D (1.3) is impossible since probabilities must lie between 0 and 1. Option B (0.6) has no mathematical basis here."
+  },
+
+  {
+    id: "ma2_28",
+    question: "Events A and B are mutually exclusive. P(A) = 0.4 and P(B) = 0.35. Find P(A or B).",
+    options: { A: "0.14", B: "0.05", C: "0.75", D: "1.0" },
+    answer: "C",
+    explanation: "Mutually exclusive means A and B cannot both occur simultaneously, so P(A ∩ B) = 0. Therefore P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.4 + 0.35 - 0 = 0.75. Compare with independent events: there, P(A ∩ B) = P(A) × P(B) = 0.14, which is option A. Mutually exclusive and independent are not the same concept."
+  },
+
+  {
+    id: "ma2_29",
+    question: "In a triangle, angle A = 40°, side a = 8 cm, and side b = 10 cm. Find angle B. (sin 40° = 0.6428)",
+    options: { A: "40°", B: "46.5°", C: "53.5°", D: "80°" },
+    answer: "C",
+    explanation: "Sine rule: a/sin A = b/sin B. Rearrange: sin B = b sin A/a = (10 × 0.6428)/8 = 6.428/8 = 0.8035. Therefore B = sin⁻¹(0.8035) ≈ 53.5°. The sine rule is used when you know a side and its opposite angle plus one additional element. Note: since sin B < 1, B is valid."
+  },
+
+  {
+    id: "ma2_30",
+    question: "In triangle PQR, p = 7 cm, q = 5 cm, and angle R = 60°. Find side r. (cos 60° = 0.5)",
+    options: { A: "7 cm", B: "√74 cm", C: "√29 cm", D: "√39 cm" },
+    answer: "D",
+    explanation: "Cosine rule: r² = p² + q² - 2pq cos R = 49 + 25 - 2(7)(5)(0.5) = 74 - 35 = 39. So r = √39 cm. The cosine rule applies when you know two sides and the included angle (SAS) or all three sides (SSS). Option C (√74) is the error of forgetting to subtract the 2pq cosR term entirely."
+  },
+
+  {
+    id: "ma2_31",
+    question: "Simplify: (1 - cos²θ)/sin²θ + (sinθ/cosθ) × (cosθ/sinθ).",
+    options: { A: "2", B: "sin²θ", C: "1", D: "0" },
+    answer: "A",
+    explanation: "First term: 1 - cos²θ = sin²θ (from the identity sin²θ + cos²θ = 1). So (1 - cos²θ)/sin²θ = sin²θ/sin²θ = 1. Second term: (sinθ/cosθ) × (cosθ/sinθ) = 1 (each fraction is the reciprocal of the other). Total = 1 + 1 = 2. The Pythagorean identity sin²θ + cos²θ = 1 is the starting point for all such simplifications."
+  },
+
+  {
+    id: "ma2_32",
+    question: "Solve for θ in the range 0° to 360°: 2sin²θ - sinθ - 1 = 0.",
+    options: { A: "30°, 150°, 270°", B: "90°, 210°, 330°", C: "30°, 90°, 210°", D: "60°, 180°, 300°" },
+    answer: "B",
+    explanation: "Let s = sinθ. Factorise: 2s² - s - 1 = (2s + 1)(s - 1) = 0. So s = 1 or s = -1/2. Case 1: sinθ = 1 gives θ = 90°. Case 2: sinθ = -1/2. Since sine is negative in the 3rd and 4th quadrants: θ = 180° + 30° = 210° and θ = 360° - 30° = 330°. All three solutions: 90°, 210°, 330°."
+  },
+
+  {
+    id: "ma2_33",
+    question: "A cone has base radius 6 cm and height 8 cm. Find its total surface area. (Take π = 22/7)",
+    options: { A: "188.6 cm²", B: "301.7 cm²", C: "339.4 cm²", D: "226.3 cm²" },
+    answer: "B",
+    explanation: "Slant height: l = √(r² + h²) = √(36 + 64) = √100 = 10 cm. Curved surface area = πrl = π × 6 × 10 = 60π. Base area = πr² = π × 36 = 36π. Total surface area = 96π = 96 × 22/7 = 2112/7 ≈ 301.7 cm². The total surface area of a cone includes both the curved surface and the circular base."
+  },
+
+  {
+    id: "ma2_34",
+    question: "A sector of a circle has radius 7 cm and subtends an angle of 120° at the centre. Find the area of the sector. (Take π = 22/7)",
+    options: { A: "154 cm²", B: "102.67 cm²", C: "77 cm²", D: "51.33 cm²" },
+    answer: "D",
+    explanation: "Area of sector = (θ/360°) × πr² = (120/360) × (22/7) × 49 = (1/3) × 154 = 154/3 ≈ 51.33 cm². The fraction 120/360 = 1/3 represents the proportion of the full circle covered by the sector. Option B (154 cm²) is the full circle area, a common error of forgetting to multiply by the fraction."
+  },
+
+  {
+    id: "ma2_35",
+    question: "Find the inverse of the matrix A = [[4, 3], [3, 2]].",
+    options: { A: "[[-2, 3], [3, -4]]", B: "[[-4, 3], [3, -2]]", C: "[[2, 3], [3, 4]]", D: "[[2, -3], [-3, 4]]" },
+    answer: "A",
+    explanation: "det(A) = (4)(2) - (3)(3) = 8 - 9 = -1. A⁻¹ = (1/det) × [[d, -b], [-c, a]] = (1/(-1)) × [[2, -3], [-3, 4]] = [[-2, 3], [3, -4]]. Verify: row 1 of A times column 1 of A⁻¹: 4(-2) + 3(3) = -8 + 9 = 1; row 1 times column 2: 4(3) + 3(-4) = 0. The identity matrix confirms the inverse is correct."
+  },
+
+  {
+    id: "ma2_36",
+    question: "Given A = [[2, 1], [0, 3]] and B = [[1, 4], [2, -1]], find the matrix AB.",
+    options: { A: "[[3, 5], [6, -3]]", B: "[[2, 4], [0, -3]]", C: "[[4, 7], [6, -3]]", D: "[[4, 7], [5, 3]]" },
+    answer: "C",
+    explanation: "Matrix multiplication, each entry (i,j) is the dot product of row i of A with column j of B. Row 1 of A is [2, 1]. Col 1 of B: 2×1 + 1×2 = 4. Col 2 of B: 2×4 + 1×(-1) = 7. Row 2 of A is [0, 3]. Col 1 of B: 0×1 + 3×2 = 6. Col 2 of B: 0×4 + 3×(-1) = -3. AB = [[4, 7], [6, -3]]."
+  },
+
+  {
+    id: "ma2_37",
+    question: "Vectors a = 2i + 3j and b = 4i - j. Find the scalar (dot) product a·b.",
+    options: { A: "11", B: "8", C: "14", D: "5" },
+    answer: "D",
+    explanation: "a·b = (2)(4) + (3)(-1) = 8 - 3 = 5. The dot product: multiply corresponding components and add. The result is a scalar, not a vector. If a·b = 0, the vectors are perpendicular. The dot product is also equal to |a||b|cosθ, which allows the angle between two vectors to be found."
+  },
+
+  {
+    id: "ma2_38",
+    question: "Find the angle between vectors p = 3i + 4j and q = 4i + 3j, to the nearest degree.",
+    options: { A: "16°", B: "90°", C: "74°", D: "45°" },
+    answer: "A",
+    explanation: "p·q = (3)(4) + (4)(3) = 12 + 12 = 24. |p| = √(9 + 16) = 5. |q| = √(16 + 9) = 5. cosθ = p·q/(|p||q|) = 24/(5 × 5) = 24/25 = 0.96. θ = cos⁻¹(0.96) ≈ 16.3° ≈ 16°. These vectors point in nearly the same direction, hence the small angle. Option D (90°) would require p·q = 0."
+  },
+
+  {
+    id: "ma2_39",
+    question: "In a survey of 60 students: 35 like Mathematics, 28 like English, 20 like Science, 15 like both Maths and English, 10 like both Maths and Science, 8 like both English and Science, and 5 like all three. How many students like none of the three subjects?",
+    options: { A: "5", B: "8", C: "10", D: "15" },
+    answer: "A",
+    explanation: "By the 3-set inclusion-exclusion formula: n(M ∪ E ∪ S) = n(M) + n(E) + n(S) - n(M∩E) - n(M∩S) - n(E∩S) + n(M∩E∩S) = 35 + 28 + 20 - 15 - 10 - 8 + 5 = 55. Students who like at least one subject = 55. Students who like none = 60 - 55 = 5. This 7-term formula is the most tested 3-set result in JAMB."
+  },
+
+  {
+    id: "ma2_40",
+    question: "Express (3x + 11)/[(x + 1)(x - 3)] as partial fractions.",
+    options: { A: "2/(x+1) + 5/(x-3)", B: "-2/(x+1) + 5/(x-3)", C: "5/(x+1) - 2/(x-3)", D: "2/(x+1) - 5/(x-3)" },
+    answer: "B",
+    explanation: "Let (3x + 11)/[(x+1)(x-3)] = A/(x+1) + B/(x-3). Multiply both sides by (x+1)(x-3): 3x + 11 = A(x-3) + B(x+1). Substitute x = 3: 9 + 11 = B(4); 20 = 4B; B = 5. Substitute x = -1: -3 + 11 = A(-4); 8 = -4A; A = -2. Result: -2/(x+1) + 5/(x-3). Verify by recombining: [-2(x-3) + 5(x+1)]/[(x+1)(x-3)] = (3x+11)/[(x+1)(x-3)]. Correct."
+  }
+
+]; // end Mathematics
